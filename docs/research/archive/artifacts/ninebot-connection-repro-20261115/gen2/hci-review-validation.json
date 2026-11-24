@@ -1,0 +1,45 @@
+{
+  "scope": "synthetic independent review; no actual HCI or vehicle",
+  "source": "tools/ninebot-ble-test/scripts/analyze-hci.py",
+  "source_sha256": "099a168ec8a188a80dc8fb5ed6c47c55e95f3796bf2e7edfedb3c7a29bdaded6",
+  "cases": [
+    {
+      "id": "discovery-request-context-must-not-survive-gap",
+      "expected": "no characteristic mapping at handle9 from unmatched response",
+      "passed": true,
+      "observed_characteristics": {
+        "3": {
+          "uuid": "00002a00-0000-1000-8000-00805f9b34fb",
+          "properties": 4,
+          "declarationHandle": 2
+        }
+      }
+    },
+    {
+      "id": "consumed-mtu-request-must-not-match-unpaired-response",
+      "expected": "no actualAttMtu annotation on unpaired response after missing request",
+      "passed": true,
+      "last_event": {
+        "event": "att",
+        "packet": 4,
+        "time": 0,
+        "link": "0001-1",
+        "direction": "phone_rx",
+        "opcode": "03",
+        "hex": "03b900"
+      }
+    },
+    {
+      "id": "invalid-acl-record-must-invalidate-partial-l2cap",
+      "expected": "no reconstructed ATT across rejected ACL record on same handle/direction",
+      "passed": true,
+      "counts": {
+        "records": 3,
+        "acl_records": 3,
+        "invalid_acl_lengths": 1,
+        "orphan_continuations": 1
+      }
+    }
+  ],
+  "failures": 0
+}

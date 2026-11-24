@@ -1,0 +1,49 @@
+{
+  "reviewer": "jpeg branch agent",
+  "class_hashes": [
+    {
+      "class": "ks0.class",
+      "sha256": "d18d41dad828fb84c254ea1ca6c4dde6f2f9f4f078b6496811fb8b01b2507c10"
+    },
+    {
+      "class": "js0.class",
+      "sha256": "f77922954b48881f2e66dad1d6aecd25005a0a684b97d95226c4bfe742d12267"
+    },
+    {
+      "class": "is0.class",
+      "sha256": "524f299562a7120509bb3391f1d43eaa7d858e088674e0102fe6ce669f1c40c9"
+    }
+  ],
+  "result": {
+    "method": "Original APK DEX translated by dex2jar 2.4; ks0/js0/is0 unchanged; j31 output callback stub; caller enqueue mirrors sd fragment insertion",
+    "passed": 24,
+    "cases": [
+      "defaults_conv3_nodelay1_interval10_fastresend2_nocwnd_send256_recv256_remote128",
+      "original_header_encoder_matches_independent_little_endian_vector",
+      "rtp1400_splits_into_udp1400_and_udp48",
+      "two_segment_message_fragment_count_and_sn",
+      "kcp_payload_reassembly_preserves_complete_rtp_message",
+      "flush_interval_10ms_defers_before_deadline",
+      "timeout_200ms_retransmits_and_nodelay1_rto_grows_1point5",
+      "ack_and_una_remove_send_buffer_and_update_remote_window",
+      "two_higher_acks_raise_fastack_for_missing_segment",
+      "fast_resend_after_two_acks_before_timeout",
+      "initial_remote_window128_limits_send_buffer_not_queue",
+      "unacked_repeated_enqueue_has_no_app_queue_bound",
+      "advertised_remote256_opens_local_send_window256",
+      "wrong_conv_ignored_and_cannot_update_session",
+      "unknown_command_rejected_before_state_update",
+      "claimed_payload_length_overrun_rejected",
+      "zero_remote_window_stops_data_without_dropping_queue",
+      "zero_window_probe_wask_after7000ms",
+      "incoming_window_probe_generates_wins",
+      "incoming_push_is_acked_and_retained_in_undrained_receive_queue",
+      "no_dead_link_or_max_transmit_stop_after30_timeouts",
+      "receive_sn_wrap_retains_zero_in_buffer_without_advancing_long_counter",
+      "post_wrap_selective_ack_equality_misses_long_sn_without_cumulative_una",
+      "post_wrap_cumulative_una_still_clears_sender"
+    ]
+  },
+  "stderr": "OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.\n",
+  "note": "Independent extraction and compilation, only j31 callback stub; no network IO"
+}

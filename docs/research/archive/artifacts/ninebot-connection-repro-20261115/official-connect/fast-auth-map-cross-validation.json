@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "ELF_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+  "cases_passed": 7,
+  "scope": "Supplemental original 37ce98 parser and 355fb8 HashMap insertion. Hash seed, memory and runtime hooks only; not the owner's 47-case suite repeated as new coverage. No radio, cloud, credentials or cipher use.",
+  "cases": [
+    {
+      "case": "duplicate_last_value",
+      "input_hex": "0f01000f0104",
+      "type_width": 1,
+      "length_width": 1,
+      "original_insert_tags": [
+        15,
+        15
+      ],
+      "final_map_items": 1,
+      "final_values": [
+        {
+          "tag": 15,
+          "value_hex": "04"
+        }
+      ]
+    },
+    {
+      "case": "duplicate_last_empty",
+      "input_hex": "0f01000f00",
+      "type_width": 1,
+      "length_width": 1,
+      "original_insert_tags": [
+        15,
+        15
+      ],
+      "final_map_items": 1,
+      "final_values": [
+        {
+          "tag": 15,
+          "value_hex": ""
+        }
+      ]
+    },
+    {
+      "case": "interleaved_duplicates",
+      "input_hex": "0f01001401410f0104",
+      "type_width": 1,
+      "length_width": 1,
+      "original_insert_tags": [
+        15,
+        20,
+        15
+      ],
+      "final_map_items": 2,
+      "final_values": [
+        {
+          "tag": 15,
+          "value_hex": "04"
+        },
+        {
+          "tag": 20,
+          "value_hex": "41"
+        }
+      ]
+    },
+    {
+      "case": "duplicate_then_short_value",
+      "input_hex": "0f01000f01040f0241",
+      "type_width": 1,
+      "length_width": 1,
+      "original_insert_tags": [
+        15,
+        15
+      ],
+      "final_map_items": 1,
+      "final_values": [
+        {
+          "tag": 15,
+          "value_hex": "04"
+        }
+      ]
+    },
+    {
+      "case": "duplicate_header_without_value",
+      "input_hex": "0f01000f01",
+      "type_width": 1,
+      "length_width": 1,
+      "original_insert_tags": [
+        15
+      ],
+      "final_map_items": 1,
+      "final_values": [
+        {
+          "tag": 15,
+          "value_hex": "00"
+        }
+      ]
+    },
+    {
+      "case": "long_tlv_duplicate",
+      "input_hex": "12340300414243123402004445",
+      "type_width": 2,
+      "length_width": 2,
+      "original_insert_tags": [
+        4660,
+        4660
+      ],
+      "final_map_items": 1,
+      "final_values": [
+        {
+          "tag": 4660,
+          "value_hex": "4445"
+        }
+      ]
+    },
+    {
+      "case": "malformed_tail_no_resync",
+      "input_hex": "0f010014ff410f0104",
+      "type_width": 1,
+      "length_width": 1,
+      "original_insert_tags": [
+        15
+      ],
+      "final_map_items": 1,
+      "final_values": [
+        {
+          "tag": 15,
+          "value_hex": "00"
+        }
+      ]
+    }
+  ]
+}

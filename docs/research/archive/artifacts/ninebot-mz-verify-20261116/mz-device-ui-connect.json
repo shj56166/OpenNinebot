@@ -1,0 +1,108 @@
+{
+  "activation": {
+    "command": "rBool",
+    "transform": {
+      "mask": 2048,
+      "parse": "toBoolean, 0, 2, != 0"
+    }
+  },
+  "cache_values": [
+    {
+      "command": "rSN",
+      "cache_key": "wnumber",
+      "transform": {
+        "parse": "toASCIIString, 0, 14"
+      }
+    },
+    {
+      "command": "rECUPN",
+      "cache_key": "ecu_pn",
+      "transform": {
+        "parse": "toPn, 0, 14"
+      }
+    },
+    {
+      "command": "rBool",
+      "cache_key": "activateState",
+      "transform": {
+        "mask": 2048,
+        "parse": "toBoolean, 0, 2, > 0"
+      }
+    },
+    {
+      "command": "rBool",
+      "cache_key": "app_0xb2_upload",
+      "transform": {
+        "parse": "toInt, 0, 2"
+      }
+    },
+    {
+      "command": "rFunAppBool",
+      "cache_key": "app_0x8a_upload",
+      "transform": {
+        "parse": "toInt, 0, 2"
+      }
+    },
+    {
+      "command": "rFunAppBool2",
+      "cache_key": "app_0x8c_upload",
+      "transform": {
+        "parse": "toInt, 0, 2"
+      }
+    }
+  ],
+  "command_condition": {
+    "values": [
+      {
+        "command": "rMainPower",
+        "refresh": true,
+        "transform": {
+          "mask": 4,
+          "parse": "toBoolean, 0, 2, > 0"
+        }
+      }
+    ]
+  },
+  "can_response_modules": [
+    {
+      "name": "ble"
+    },
+    {
+      "name": "ecu"
+    },
+    {
+      "name": "tft"
+    }
+  ],
+  "queue": [
+    {
+      "period": 0,
+      "commands": [
+        "rSN",
+        "rBool",
+        "rECUPN",
+        "rFunAppBool",
+        "rFunAppBool2"
+      ]
+    }
+  ],
+  "server": {
+    "url": "/app-api/device/bind/is-binding",
+    "method": "post",
+    "cache_enable": true,
+    "success_code": 1,
+    "server_platform": "java_v2",
+    "apply_server_config": false,
+    "params": "{\"uid\":\"$uid\",\"wnumber\":\"$wnumber\",\"vehicle_type\":\"$vehicle_type\",\"ecu_pn\":\"$ecu_pn\"}"
+  },
+  "servers": [
+    {
+      "url": "/app-api/device/mac/update-mac-info",
+      "method": "post",
+      "success_code": 1,
+      "apply_server_config": false,
+      "server_platform": "java_v2",
+      "params": "{\"uid\":\"$uid\",\"wnumber\":\"$wnumber\",\"vehicle_type\":\"$vehicle_type\",\"vehicle_mac\":\"$vehicle_mac\",\"app_0xb2\":\"$app_0xb2_upload\",\"app_0x8a\":\"$app_0x8a_upload\",\"app_0x8c\":\"$app_0x8c_upload\",\"battery_in\":\"$app_battery_in\"}"
+    }
+  ]
+}

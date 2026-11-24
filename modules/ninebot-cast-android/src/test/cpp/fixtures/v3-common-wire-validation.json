@@ -1,0 +1,558 @@
+{
+  "ELF_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+  "scope": "Original common serializers and built-in cipher only; synthetic inputs. Not full Gen3 authentication or vehicle acceptance.",
+  "cases_passed": 27,
+  "cases": [
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5003e600500",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 0,
+      "original_cipher": {
+        "bytes_hex": "5aa5009a8861ea00005cff0000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5003e600500",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5003e600500",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 1,
+      "original_cipher": {
+        "bytes_hex": "5aa5008439c01a6611bec50002",
+        "tx_counter": 2,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5003e600500",
+        "tx_counter": 0,
+        "rx_counter": 2
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5003e600500",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 255,
+      "original_cipher": {
+        "bytes_hex": "5aa500f990738324cadd180100",
+        "tx_counter": 256,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5003e600500",
+        "tx_counter": 0,
+        "rx_counter": 256
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5003e600500",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 65534,
+      "original_cipher": {
+        "bytes_hex": "5aa5007faa18cc7a36b5f0ffff",
+        "tx_counter": 65535,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5003e600500",
+        "tx_counter": 0,
+        "rx_counter": 65535
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 0,
+      "original_cipher": {
+        "bytes_hex": "5aa5229a8861efc90ca56892bc38f0d25dfddfc04c6473bce074f5ffbf313b7cb4fcb5a6eb60efdc1d00002cf50000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 1,
+      "original_cipher": {
+        "bytes_hex": "5aa5228439c01f418ffc23c2f8abb3412fd318e696f6a7ef725c4a57f7ec3fd0951ef20ecf9702861617c6d94a0002",
+        "tx_counter": 2,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 2
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 255,
+      "original_cipher": {
+        "bytes_hex": "5aa522f9907386dbdf86425cea81cef16744b41ef2f6ea5870ccc054d9206df3604a49d42517c7f2566c0fe9d10100",
+        "tx_counter": 256,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 256
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 65534,
+      "original_cipher": {
+        "bytes_hex": "5aa5227faa18c939013782f66a1916c29b405dc6dd7db6b85855296bc5f5feb08f260ab2447ce3623db7a5caacffff",
+        "tx_counter": 65535,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5223e600505131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 65535
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 0,
+      "original_cipher": {
+        "bytes_hex": "5aa5ff9a886115da1ba698ecba96f176b5f6bfa8e56ae5ca0bb688fcaa86e166a5e6afb8f57af5fa3b86b8cc9ab6d15695d69f88c54ac5ea2b96a8dc8aa6c14685c68f98d55ad59a5be6d8acfad6b136f5b6ffe8a52aa58a4bf6c8bceac6a126e5a6eff8b53ab5ba7bc6f88cdaf69116d596dfc8850a85aa6bd6e89ccae68106c586cfd8951a955a9b26186c3a1671f635763f2865ea654a8b36087c2a0661e625662f3875fa757abb06384c1a3651d615561f0845ca456aab16285c0a2641c605460f1855da551adb66582c7a5631b675367f6825aa250acb76483c6a4621a665266f7835ba353afb46780c5a76119655165f48058a052aeb56681c4a66018645064f58159a0000dc7f0000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 1,
+      "original_cipher": {
+        "bytes_hex": "5aa5ff8439c0e55298ffd3bcfe05b2e5c7d8788e3ff83199999e3754e25be5ca8404e810d18d18a03013a4e9245c3adf332c2da095a4144c2429234fb9f51540b852a1a17846b6b9401ca988e84be4bd666c78f61e1b50cf4c8aaa6c5869066434243e5ac8c42288c6a39ab40f303f39d2a2acd231bd3a2092d87c1d07ab210d3ef288ca688f40b93f49a0b6bb109663f6bbeca0fb73335c570b61cdfe275d6ccc7b22d351ddc29e7df5667b1cd9e245a8e47bf3b10e37ae87f5c645263d56df807d36e8b44bcd8c9f085609c9734f7beee673b92fe791c99737b2e5e9af013d058ea878e1cdea777620d38adf5574e118692e6794191d57daab0f34d499a31f67fc8b2e7f7cf03c3b490002",
+        "tx_counter": 2,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 2
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 255,
+      "original_cipher": {
+        "bytes_hex": "5aa5fff990737cc8c885b222ec2fcf558f4fd4765bf87c2e9b0ebd57cc97b7e9715053ca3b0dddd470ee13285271b87da69d59aa3a163a3bceb7eca2838be5a41003bd8a08195464b738589218452677d457a822891d62379e6edd1d8b00bc1a5eabe892a030a2820531b7774dc1e7aaaae4b7ded15069485346cbfbe4684248116c26490c3a5a10681a4f0586c0330ad99fbb39125914f07050a7c0e2ea63216ae869f9c57cf3a8fe88923cf0c9536c8c45e36a4dcdd3d9ff5946b84ac4a46fe3e6dd71f33c44ee4d29dd4fda7929c8aa166007328126af30683a2b5e05388cc167070e03ad099eab3d2f61f3bb6b19d8d6d2a8ebefecf0c284ce188a760814850ccd0b38d02f4c91ef0100",
+        "tx_counter": 256,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 256
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": false,
+      "plaintext_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 65534,
+      "original_cipher": {
+        "bytes_hex": "5aa5ff7faa18332a163472886cb71766734b3dae747320ceb3975468d04224aa9e3c10ac5a66f9441bed75a5e98bcdf8dd52ee681935a23f0b00b9e623189bb2cc01ba02d8456406c549e46e772157811c76a8da562ac35ea55dead5f0a97b05afb86acb515bbaa7f76a3373487cbbfebfd036e963c94fbfbe82fc0855f381d3aecaad6ad7f3d6248cadcb53f90641221abad5c369b6b1be0fae0926344cf4fc2cd3985f69046e16b8d79165b1bca66610ae6365f5aea0705521b02505cc6126a50873edaf56936cbc4dd315c4df42642b71c41675b509ac63a90480dc3f1d0a52856097bddb593156991c634b78d5f67203da99e8be20e75291827ff310b84dbe0f42fde1059caee132ffff",
+        "tx_counter": 65535,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "5aa5ff3e6005ff000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 65535
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5500003e60050000",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 0,
+      "original_cipher": {
+        "bytes_hex": "aa5500009a8861eada00005cff0000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5500003e60050000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5500003e60050000",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 1,
+      "original_cipher": {
+        "bytes_hex": "aa5500008439c01a52439a30e00002",
+        "tx_counter": 2,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5500003e60050000",
+        "tx_counter": 0,
+        "rx_counter": 2
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5500003e60050000",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 255,
+      "original_cipher": {
+        "bytes_hex": "aa550000f9907383c86a6176fb0100",
+        "tx_counter": 256,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5500003e60050000",
+        "tx_counter": 0,
+        "rx_counter": 256
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5500003e60050000",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 65534,
+      "original_cipher": {
+        "bytes_hex": "aa5500007faa18cc2a9fb5c6b5ffff",
+        "tx_counter": 65535,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5500003e60050000",
+        "tx_counter": 0,
+        "rx_counter": 65535
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 0,
+      "original_cipher": {
+        "bytes_hex": "aa5522009a8861efda09b29a1bc5935e78101db5cf8cc0ea437c5e4b86a89057b3bef4b4a5ea67eedf1ca300002cf50000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 1,
+      "original_cipher": {
+        "bytes_hex": "aa5522008439c01f528aebd14b81001deb623372e956523e10ee76f42ee04d531f9f16f30dce90038517362bbae9f80002",
+        "tx_counter": 2,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 2
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 255,
+      "original_cipher": {
+        "bytes_hex": "aa552200f9907386c8da91b0d5932a605b2aa4de11325273a7ece67e2dce81013c6a4248d72410c6f157cb921019090100",
+        "tx_counter": 256,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 256
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 65534,
+      "original_cipher": {
+        "bytes_hex": "aa5522007faa18c92a0420707f13b2b868d6a037c91dd92f47c47f9712d254927f852e0bb1457be2613cc84734e867ffff",
+        "tx_counter": 65535,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa5522003e60050500131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+        "tx_counter": 0,
+        "rx_counter": 65535
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 0,
+      "original_cipher": {
+        "bytes_hex": "aa55ff009a886115da1aa599ebbb95f079b4f5beafe469e4d50ab589fbab85e069a4e5aebff479f4c53a85b9cb9bb5d05994d59e8fc449c4f52a95a9db8ba5c04984c58e9fd459d4e55ae5d9abfbd5b039f4b5feefa429a4954af5c9bbebc5a029e4a5eeffb439b4857ac5f98bdbf59019d495decf840984b56ad5e99bcbe58009c485cedf941994a59a25196b3b1570f934753e2f64e964558a35097b2b0560e924652e3f74f97445ba05394b1b3550d914551e0f44c94475aa15295b0b2540c904450e1f54d95465da65592b7b5530b974357e6f24a92415ca75493b6b4520a964256e7f34b93405fa45790b5b75109954155e4f04890435ea55691b4b65008944054e5f1499140000dc7f0000",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 0
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 1,
+      "original_cipher": {
+        "bytes_hex": "aa55ff008439c0e55299fcd2bbff06b3eac6db79893efb3086989d3653e358e4c58507e917d08e199f3110a5ee255f3bd0322f2ca794a71553252a2248b8f6144fb951a0a67945b7c6411fa88fe948e5b2676f79f11f1851d04d89ab6b596a076b35273f5dc9c723b7c7a09bb30e333e36d3a1add530be3b3f93db7d1a06a820023ff189cd698c41463e4aa1b1ba13976cf7b8eda7fa703243560860caff245c63cd7823d450dec3a17cf6677c1ddae34aa9e77af4b00d36b186f6c742273e57d0817e37efb548ccf39e0b570ec8704e74efe572be2ee490d69634b3e2e8ac0032048da97fe0ceeb487723d28dde5675ee196a2f60951a1c48dba80e33d59aa21066ff8a297e7f5cb523b46a0002",
+        "tx_counter": 2,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 2
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 255,
+      "original_cipher": {
+        "bytes_hex": "aa55ff00f990737cc8c986b325ed2cce5a8e4cd5715afb7d319a0dbc50cd94b6e6705352cd3a0edceb71ed122f5372b972a79e58ad3b153b24cfb4eda58288e4ab1100bc8d091a551bb63b599519462778d554a925881e63289f6ddc1a8a03bd155fa8e995a133a3bd0432b6704cc2e6a5abe7b6d9d05368575245cafce56b4347106f274e0d395bef69194e0287c33205d89cba3e135a15ef7153a6c7e3e9622e6beb68fec47ff297ff8b933bf1ca52638d46e26d4cced2c6fe5a47bf4bc7a560e2e5dc76f23f45914c2adc48db7a28c7ab156100338227b0316b3b2c5f063983c064060902ae08a1aa3e2e66f2b86a16d9d5d3afeaecedefc387cf1f8b75091b840fcc0c39d33cfa83203f0100",
+        "tx_counter": 256,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 256
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    },
+    {
+      "aa55": true,
+      "plaintext_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+      "key1_hex": "4e422d56332d53594e54484554494300",
+      "key2_hex": "000102030405060708090a0b0c0d0e0f",
+      "auth_hex": "000102030405060708090a0b0c0d0e0f",
+      "initial_counter": 65534,
+      "original_cipher": {
+        "bytes_hex": "aa55ff007faa18332a1737738f6db4166972483ca9757021d1b294556fd14125a59f3f11ab5b65f87b1aee74a2e888ccf7dc51ef6f1836a3200a03b8e1221b9abdcd02bb05d9466579c44ae5697622568e1d75a9dd5729c241a45eebd2f1aa7a0aaebb6bcc5058bb98f6693274497fbaf1bed337ee62ca4ea0bf81fd0f54f080dcafc9ac6dd6f0d7db8daeca54f805402d1bb9d4c468b5b0a10ead0821354ff5f32dd0995868076f29b9d49062b0bfa76911ad6262f4ada16f5422b12204cf6029a40b72eaae559213bd4ed212c5dc436b2a72c51174b608b362aa0587dd3c1c0553866190bcd8580e579a1d644a7bd4f97300db9ee9bd21f853928378f213b942bf0c43fae00647a1b698eeffff",
+        "tx_counter": 65535,
+        "rx_counter": 0
+      },
+      "python_aes_oracle_matches": true,
+      "original_decrypt": {
+        "bytes_hex": "aa55ff003e6005ff00000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfe",
+        "tx_counter": 0,
+        "rx_counter": 65535
+      },
+      "tampered_tail_rejected": {
+        "error": -2
+      }
+    }
+  ],
+  "unestablished_v23_dispatch": [
+    {
+      "payload_hex": "",
+      "wire_hex": "5aa5003e6005005cff",
+      "discriminant": 3,
+      "cipher_enabled": false,
+      "plaintext_checksum_matches": true
+    },
+    {
+      "payload_hex": "131601f37a03a806ace1016b64a4009966fad06e1700a1cd02080001020304050607",
+      "wire_hex": "5aa5223e600500131601f37a03a806ace1016b64a4009966fad06e1700a1cd020800010203040506070ff5",
+      "discriminant": 3,
+      "cipher_enabled": false,
+      "plaintext_checksum_matches": true
+    },
+    {
+      "payload_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "wire_hex": "5aa5403e600500000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f3cf7",
+      "discriminant": 3,
+      "cipher_enabled": false,
+      "plaintext_checksum_matches": true
+    }
+  ]
+}

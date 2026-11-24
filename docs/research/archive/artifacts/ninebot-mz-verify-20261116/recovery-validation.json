@@ -1,0 +1,59 @@
+{
+  "status": "recovered_official_configuration",
+  "model": 14360,
+  "configurationVersion": 600015500,
+  "source": "public fallback package addressed by frozen official APK; decoded files anchored byte-for-byte to 2026-10-09 root export; encrypted wrappers differ",
+  "nativeSha256": "b29461112cf4754ab663752701007a2ab13d841aab5ffefd07ce091eb86ee33d",
+  "packageSha256": "07e7c35f23291d3f971e0c276c737895ead27a1afc2a2751fd0cb51bc24ef465",
+  "originalAccessorExecutions": [
+    {
+      "accessor": "Key",
+      "entry": "0x15c88",
+      "instructionsAvailable": 62,
+      "newStringUtfCalls": 1,
+      "resultLength": 16
+    },
+    {
+      "accessor": "IV",
+      "entry": "0x15d80",
+      "instructionsAvailable": 62,
+      "newStringUtfCalls": 1,
+      "resultLength": 16
+    }
+  ],
+  "rootSnapshotComparisons": [
+    {
+      "file": "ble.nb",
+      "sameEncryptedBytesAsRoot": false,
+      "sameDecodedBytesAsRoot": true,
+      "plaintextSha256": "57e87866cff3aa1115add579f33619a7b56fc2150ac594d81e83e2b6070724d4"
+    },
+    {
+      "file": "device_commands.nb",
+      "sameEncryptedBytesAsRoot": false,
+      "sameDecodedBytesAsRoot": true,
+      "plaintextSha256": "3a720c9e42397814f6af327b122c528d23c03b2f69b74bd68ae10c56cb97d80c"
+    },
+    {
+      "file": "vehicle_capability_config.nb",
+      "sameEncryptedBytesAsRoot": false,
+      "sameDecodedBytesAsRoot": true,
+      "plaintextSha256": "a917035fc1feac49fc4ff0f6e414aaa0e988770a1a902eddf2e245d3a991cd35"
+    }
+  ],
+  "verifyEncryptedBytes": 2156,
+  "verifyEncryptedSha256": "c328182447afa71bede26da2d46c418a187240745e6b7a4771e1aad648dd60cf",
+  "verifyPlaintextBytes": 1613,
+  "verifyPlaintextSha256": "522bf954e490640d9df1cd5159d61eb3be211cba43da5a7dbc90d0d354d26dce",
+  "verifyRootKeys": [
+    "activation",
+    "cache_values",
+    "command_condition",
+    "can_response_modules",
+    "queue",
+    "server",
+    "servers"
+  ],
+  "sensitiveParametersExported": false,
+  "vehicleTestPerformed": false
+}

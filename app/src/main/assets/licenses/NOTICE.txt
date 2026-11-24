@@ -1,0 +1,15 @@
+OpenNinebot 第三方组件
+
+FFmpeg 7.1.1（仅 MPEG2VIDEO 编码器、libavcodec/libavutil/libswscale）
+Copyright (c) FFmpeg contributors. LGPL-2.1-or-later.
+源码：https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz
+完整 LGPL 文本见 FFmpeg-LGPL-2.1.txt。
+本版本交付物随附 FFmpeg 原始源码、构建参数、静态库与应用目标文件的重新链接包。
+分发本 APK 时应一并提供该版本对应的源码和重新链接包。
+为调试对 LGPL 组件的修改而进行的逆向工程不受本应用其他限制条款约束。
+
+mbed TLS 3.6.4：Apache-2.0（见 mbedTLS-LICENSE.txt）
+cJSON 1.7.19：MIT（见 cJSON-LICENSE.txt）
+KCP：MIT（见 KCP-LICENSE.txt；来源和固定修订见源码 vendor/kcp/UPSTREAM.md）
+
+系统 H.264 编码由 Android MediaCodec 提供。

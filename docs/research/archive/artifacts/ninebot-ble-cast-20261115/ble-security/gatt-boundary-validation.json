@@ -1,0 +1,405 @@
+{
+  "status": "passed",
+  "ELF_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+  "engine": "Unicorn 2.1.4; unchanged ARM64 instructions",
+  "cases_passed": 24,
+  "scope": "24 segmented checks; JVM allocation/copy implementations are hooks; generic JNI invocation and Android radio not executed",
+  "cases": [
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 0,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 0,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 0,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 0
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 0,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 1,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 1,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 1,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 1
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 1,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 20,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 20,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 20,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 20
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 20,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 21,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 21,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 21,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 21
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 21,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 64,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 64,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 64,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 64
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 64,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 128,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 128,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 128,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 128
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 128,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 220,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 220,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 220,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 220
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 220,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 244,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 244,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 244,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 244
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 244,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 512,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 512,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 512,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 512
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 512,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 1024,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 1024,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 1024,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 1024
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 1024,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5cdaf0 constructor -> relocated vtable -> 5bfbc8 poll -> 5b2450 boundary",
+      "bytes": 4096,
+      "kind": 1,
+      "observed": {
+        "client": 268443648,
+        "char": 268447744,
+        "pointer": 285212672,
+        "length": 4096,
+        "type_byte": 1
+      },
+      "input_writes": [],
+      "instructions": 53
+    },
+    {
+      "segment": "5d6390 -> original NewByteArray and SetByteArrayRegion wrappers -> JVM table hooks",
+      "bytes": 4096,
+      "calls": [
+        {
+          "operation": "NewByteArray",
+          "length": 4096
+        },
+        {
+          "operation": "SetByteArrayRegion",
+          "start": 0,
+          "length": 4096,
+          "pointer_unchanged": true,
+          "data_unchanged": true
+        }
+      ],
+      "input_writes": []
+    },
+    {
+      "segment": "5c1684 -> original argument builder -> generic JNI call boundary 5d9f60",
+      "android_write_type": 1,
+      "observed": {
+        "args": [
+          [
+            0,
+            268480512
+          ],
+          [
+            0,
+            268484608
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "count": 3,
+        "method_cache_offset": "0x40"
+      }
+    },
+    {
+      "segment": "5c1684 -> original argument builder -> generic JNI call boundary 5d9f60",
+      "android_write_type": 2,
+      "observed": {
+        "args": [
+          [
+            0,
+            268480512
+          ],
+          [
+            0,
+            268484608
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "count": 3,
+        "method_cache_offset": "0x40"
+      }
+    }
+  ]
+}

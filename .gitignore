@@ -1,0 +1,13 @@
+.gradle/
+.deps/
+.native-tests/
+.cxx/
+**/build/
+local.properties
+signing.properties
+*.jks
+*.keystore
+*-private-key*
+*.pem
+.idea/
+__pycache__/

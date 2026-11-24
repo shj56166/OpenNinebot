@@ -1,0 +1,1 @@
+{"status":"passed","checks":5103,"packet_cases":210,"kcp_queue_cases":29,"execution":"dex2jar original sd/v01 method bytecode; unrelated static initializers and interfaces removed; environment stubs only; ks0/js0 stubs validate sd enqueue and callback behavior, not KCP implementation","tiny_keyframe_vector":"90a012341234567800000000000000010019780600"}

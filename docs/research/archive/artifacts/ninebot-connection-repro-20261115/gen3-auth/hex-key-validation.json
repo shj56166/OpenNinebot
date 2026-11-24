@@ -1,0 +1,240 @@
+{
+  "status": "passed",
+  "ELF_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+  "engine": "Unicorn 2.1.4; unchanged ARM64 instructions",
+  "cases_passed": 12,
+  "scope": "Original 2bdd60 -> 2a6420 -> 384da0 -> 2bcf54/27e288 decoder. Allocation and drop hooked; no cipher, radio, or cloud execution. Synthetic inputs only.",
+  "cases": [
+    {
+      "case": "empty",
+      "input_bytes": 0,
+      "accepted": true,
+      "output_bytes": 0,
+      "reference_matches": true,
+      "original_chain": [
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [],
+      "reserve_hooks": []
+    },
+    {
+      "case": "one_byte",
+      "input_bytes": 2,
+      "accepted": true,
+      "output_bytes": 1,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": []
+    },
+    {
+      "case": "upper_case",
+      "input_bytes": 8,
+      "accepted": true,
+      "output_bytes": 4,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": []
+    },
+    {
+      "case": "lower_case_16",
+      "input_bytes": 32,
+      "accepted": true,
+      "output_bytes": 16,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": [
+        {
+          "from": 8,
+          "to": 16
+        }
+      ]
+    },
+    {
+      "case": "mixed_case_16",
+      "input_bytes": 32,
+      "accepted": true,
+      "output_bytes": 16,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": [
+        {
+          "from": 8,
+          "to": 16
+        }
+      ]
+    },
+    {
+      "case": "all_16_byte_values",
+      "input_bytes": 512,
+      "accepted": true,
+      "output_bytes": 256,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": [
+        {
+          "from": 8,
+          "to": 16
+        },
+        {
+          "from": 16,
+          "to": 32
+        },
+        {
+          "from": 32,
+          "to": 64
+        },
+        {
+          "from": 64,
+          "to": 128
+        },
+        {
+          "from": 128,
+          "to": 256
+        }
+      ]
+    },
+    {
+      "case": "odd_1",
+      "input_bytes": 1,
+      "accepted": false,
+      "output_bytes": null,
+      "reference_matches": true,
+      "original_chain": [
+        "0x2bdd60"
+      ],
+      "allocator_sizes": [],
+      "reserve_hooks": []
+    },
+    {
+      "case": "odd_31",
+      "input_bytes": 31,
+      "accepted": false,
+      "output_bytes": null,
+      "reference_matches": true,
+      "original_chain": [
+        "0x2bdd60"
+      ],
+      "allocator_sizes": [],
+      "reserve_hooks": []
+    },
+    {
+      "case": "invalid_first",
+      "input_bytes": 32,
+      "accepted": false,
+      "output_bytes": null,
+      "reference_matches": true,
+      "original_chain": [
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [],
+      "reserve_hooks": []
+    },
+    {
+      "case": "invalid_last",
+      "input_bytes": 32,
+      "accepted": false,
+      "output_bytes": null,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": [
+        {
+          "from": 8,
+          "to": 16
+        }
+      ]
+    },
+    {
+      "case": "space",
+      "input_bytes": 6,
+      "accepted": false,
+      "output_bytes": null,
+      "reference_matches": true,
+      "original_chain": [
+        "0x27e288",
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [
+        8
+      ],
+      "reserve_hooks": []
+    },
+    {
+      "case": "non_ascii",
+      "input_bytes": 32,
+      "accepted": false,
+      "output_bytes": null,
+      "reference_matches": true,
+      "original_chain": [
+        "0x2a6420",
+        "0x2bcf54",
+        "0x2bdd60",
+        "0x384da0"
+      ],
+      "allocator_sizes": [],
+      "reserve_hooks": []
+    }
+  ]
+}

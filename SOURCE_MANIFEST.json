@@ -1,0 +1,927 @@
+{
+  "schemaVersion": 1,
+  "sourcePolicy": "explicit Ninebot/common allowlist; clean history",
+  "sourceFiles": {
+    "research/gen2/crypto_oracle.py": {
+      "source": "research/gen2/crypto_oracle.py",
+      "sha256": "63df2c4b4fa709853b3366c746c472c556627b0f430c9d553bc319d3bf8917d2"
+    },
+    "research/gen2/generate_probe_vectors.py": {
+      "source": "research/gen2/generate_probe_vectors.py",
+      "sha256": "1436f30cdbe1992a43716ea31f48f328c0cef9b7c8c282a1bce98b598e7697f0"
+    },
+    "research/gen2/probe-vectors.json": {
+      "source": "research/gen2/probe-vectors.json",
+      "sha256": "4b85d6cd8cade40edd0316af2defe7c1c82f847848fdcae5d9be779ad4330419"
+    },
+    "research/README.md": {
+      "source": "research/README.md",
+      "sha256": "c5f02a002038a11cf8a4027b7acf8d4d4d2f2db37ad8dc5c76be3eb18acd263c"
+    },
+    "app/src/main/AndroidManifest.xml": {
+      "source": "app/src/main/AndroidManifest.xml",
+      "sha256": "11fe51c526896e030d66bb885547ff571729609bf0a4b925e4826e5ebefe6162"
+    },
+    "app/src/main/assets/licenses/cJSON-LICENSE.txt": {
+      "source": "app/src/main/assets/licenses/cJSON-LICENSE.txt",
+      "sha256": "a36dda207c36db5818729c54e7ad4e8b0c6fba847491ba64f372c1a2037b6d5c"
+    },
+    "app/src/main/assets/licenses/FFmpeg-LGPL-2.1.txt": {
+      "source": "app/src/main/assets/licenses/FFmpeg-LGPL-2.1.txt",
+      "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe"
+    },
+    "app/src/main/assets/licenses/KCP-LICENSE.txt": {
+      "source": "app/src/main/assets/licenses/KCP-LICENSE.txt",
+      "sha256": "6587fd02a924b97dbd6758b0573ddec056fb494a84f3709c5aaa33ce1f7f029c"
+    },
+    "app/src/main/assets/licenses/mbedTLS-LICENSE.txt": {
+      "source": "app/src/main/assets/licenses/mbedTLS-LICENSE.txt",
+      "sha256": "9b405ef4c89342f5eae1dd828882f931747f71001cfba7d114801039b52ad09b"
+    },
+    "app/src/main/assets/licenses/NOTICE.txt": {
+      "source": "app/src/main/assets/licenses/NOTICE.txt",
+      "sha256": "04473b5dd7d569b304141f9a8dc416306101dc4a7622d92ec2e38fb6f3754133"
+    },
+    "app/src/main/cpp/Android.mk": {
+      "source": "app/src/main/cpp/Android.mk",
+      "sha256": "4c78352a2085bc6aa9145d1897cc05c7139e46e5ff91bb556cd3222cfc3ff96c"
+    },
+    "app/src/main/cpp/Application.mk": {
+      "source": "app/src/main/cpp/Application.mk",
+      "sha256": "1a9d960f6f98e8bd871adbf3db907c3145bf685758eb15e16ecce877d3428fa1"
+    },
+    "app/src/main/java/com/motexa/openninebot/AuthorizedNinebotProvider.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/AuthorizedNinebotProvider.java",
+      "sha256": "ee0c5a71b719786927d44e7a3f992d269cb995b1bc8a54973c2a7106fdc34c6e"
+    },
+    "app/src/main/java/com/motexa/openninebot/CastVisualFeed.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/CastVisualFeed.java",
+      "sha256": "47dc8e162b2d1094b2a0441384b3459c657b62f544a1110c42c42babce1311a1"
+    },
+    "app/src/main/java/com/motexa/openninebot/DiagnosticPrivacy.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/DiagnosticPrivacy.java",
+      "sha256": "db7ddb473e5a6e24dbc7daf5bb5ebd74e9aae765bbef79ea88309e3211f92e14"
+    },
+    "app/src/main/java/com/motexa/openninebot/GitHubUpdates.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/GitHubUpdates.java",
+      "sha256": "59be54f064548598b218ad8fdee9fd01cbd702f2b7491b00082265e67aa67262"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabActivity.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabActivity.java",
+      "sha256": "daae6dc2f38f776c45331c001c1ee295379f84351ebc70ae2d877624871b77bc"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabApplication.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabApplication.java",
+      "sha256": "3c65c730b12a0a3947a849668bdcf9394e1d0afad27c159e6ed5e51a43b6c6c1"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabClient.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabClient.java",
+      "sha256": "24e61674f4558fec88cd797eae0d9e9ecc8d25353360eeaeb5f356d52633959d"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabConnectionService.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabConnectionService.java",
+      "sha256": "d084ae56f3cb7a5b6da8406a8be5f680e8d216602a3913a1eeedd6b576d2c3b9"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabRuntime.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabRuntime.java",
+      "sha256": "0c8907c75b64861c98d459a0c714c63502f99bae00991bfadd94edb4911224b6"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabTarget.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabTarget.java",
+      "sha256": "b246b7b1fef4cedfb87a88354135144fd1c793b15af3b86c1fb0265d4d800994"
+    },
+    "app/src/main/java/com/motexa/openninebot/LabUpdateInstaller.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/LabUpdateInstaller.java",
+      "sha256": "a95fe43ff709ad625a819d257c51fae6830c23bfbf6979b3713557b234a23a27"
+    },
+    "app/src/main/java/com/motexa/openninebot/NinebotCredentialStore.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/NinebotCredentialStore.java",
+      "sha256": "b4f95674240623fc87ea8e4fdf59b5ace76a43179755f8d690f9df4e7c1fde11"
+    },
+    "app/src/main/java/com/motexa/openninebot/NinebotFrameService.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/NinebotFrameService.java",
+      "sha256": "9ca92187e5035ebec77c2a7e6da0e304f903f4e9cf8be12f9c213aa31fbf08a9"
+    },
+    "app/src/main/java/com/motexa/openninebot/NinebotP2pTransport.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/NinebotP2pTransport.java",
+      "sha256": "950ae388bcf6605ff1139100d8286affbc0ed9774e1c6ba44b520efa24da666c"
+    },
+    "app/src/main/java/com/motexa/openninebot/NinebotTestController.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/NinebotTestController.java",
+      "sha256": "73c4af3f6655943fbb7caa93c31697c83845ac721b5446afbba5ff1daf489de8"
+    },
+    "app/src/main/java/com/motexa/openninebot/NinebotTestPanel.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/NinebotTestPanel.java",
+      "sha256": "bbd144b88efc8f5e19edb7a79e23fba69e6c67e68355bbfec767e0b6ad0f7dae"
+    },
+    "app/src/main/java/com/motexa/openninebot/NinebotTestProfile.java": {
+      "source": "app/src/main/java/com/motexa/openninebot/NinebotTestProfile.java",
+      "sha256": "90a2c1f23d5fe9731dc219ea87c5de86c6858592f95ff757e0fec68e13087574"
+    },
+    "app/src/main/res/drawable/ic_chevron_down.xml": {
+      "source": "app/src/main/res/drawable/ic_chevron_down.xml",
+      "sha256": "0e3571ec15bd2b4160a9353b7bdc1553c5430fc31e81e2a3dbaaf788f3a763b8"
+    },
+    "app/src/main/res/drawable/ic_lab.xml": {
+      "source": "app/src/main/res/drawable/ic_lab.xml",
+      "sha256": "10737555ab871912b5f6c9d515482872f44f5bae5cb743914df04773eb49afec"
+    },
+    "app/src/main/res/values/styles.xml": {
+      "source": "app/src/main/res/values/styles.xml",
+      "sha256": "6c856e1811609828fd34f95ce0df916ca38f90065681e8e7c2d86a19cc95a3c1"
+    },
+    "app/src/main/res/values-night/styles.xml": {
+      "source": "app/src/main/res/values-night/styles.xml",
+      "sha256": "47c492d1b26c3cd5b930def083912915178c8390d4ebb424d83a0f8e7f0a52fe"
+    },
+    "app/src/main/res/xml/file_paths.xml": {
+      "source": "app/src/main/res/xml/file_paths.xml",
+      "sha256": "08d8fe47729efc5120e25700800dcdf3599ef177b46d84851b0ac9e96ba2beb8"
+    },
+    "app/src/test/java/com/motexa/openninebot/AvcStreamInfoTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/AvcStreamInfoTest.java",
+      "sha256": "a59bc918e46cc64a278473688fac671b356d77525e4f3b073eeb8c6dc3ac10d5"
+    },
+    "app/src/test/java/com/motexa/openninebot/CastInstrumentViewTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/CastInstrumentViewTest.java",
+      "sha256": "49665d6143bf21603232ab26b56af0c9bccb7be122d4bce5a780c776e5290eef"
+    },
+    "app/src/test/java/com/motexa/openninebot/CastPaletteTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/CastPaletteTest.java",
+      "sha256": "06879050eb38105e8ba33051d3486c45cd1719656b4616696bb94601ab753b74"
+    },
+    "app/src/test/java/com/motexa/openninebot/DetailedTraceTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/DetailedTraceTest.java",
+      "sha256": "a8273bb3dd43c514a1eb826092631793bde294c6ebdac80352e3fbf09812e0ad"
+    },
+    "app/src/test/java/com/motexa/openninebot/EncoderConfigurationTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/EncoderConfigurationTest.java",
+      "sha256": "01f7a6a767d91766e7b5a2e28c33ea2dfa860f18a9dc0a7ae50b0457fe193547"
+    },
+    "app/src/test/java/com/motexa/openninebot/NinebotCastStartOrderTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/NinebotCastStartOrderTest.java",
+      "sha256": "116fc098f4d3890344a387f88fd1d371f8379407be3fdad03764f4e9647132af"
+    },
+    "app/src/test/java/com/motexa/openninebot/NinebotP2pTransportTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/NinebotP2pTransportTest.java",
+      "sha256": "6892d91423068324966c61aff7f6082bee6026d92197c28aa2a809e831633fe3"
+    },
+    "app/src/test/java/com/motexa/openninebot/NinebotTestProfileTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/NinebotTestProfileTest.java",
+      "sha256": "c6e41b13733d3cbc432fa5b521df7a5424d4f2164dffb34a40346931bc3e6d51"
+    },
+    "app/src/test/java/com/motexa/openninebot/NinebotWorkflowPermissionTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/NinebotWorkflowPermissionTest.java",
+      "sha256": "97bb7fa20f4e34f7ac32aa56452ef4f46c388685b92ddb02302c6880c6202f65"
+    },
+    "app/src/test/java/com/motexa/openninebot/PersistentSessionLogTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/PersistentSessionLogTest.java",
+      "sha256": "d3508cbd0a4871ab4f6dd96cbb06ee3a9277b1b87ece3151ec53c4d648711556"
+    },
+    "app/src/test/java/com/motexa/openninebot/SessionLogCountTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/SessionLogCountTest.java",
+      "sha256": "aca03b99e092550017e50c21f7b5dfb219da9e9a7a81c7ab663233c4ce61e7a9"
+    },
+    "app/src/test/java/com/motexa/openninebot/UpdatePolicyTest.java": {
+      "source": "app/src/test/java/com/motexa/openninebot/UpdatePolicyTest.java",
+      "sha256": "d016abca9515b88c93be1b1cbcea81d7e2d94ce6d904c909a78beb653aaa3e7a"
+    },
+    "probe/src/main/AndroidManifest.xml": {
+      "source": "probe/src/main/AndroidManifest.xml",
+      "sha256": "5aba0c69a862420e63fdd6505d9f1c22d0431846e701512af0892b19eb566dda"
+    },
+    "probe/src/main/assets/model-catalog.json": {
+      "source": "probe/src/main/assets/model-catalog.json",
+      "sha256": "14410a7d8e648279f02ef059f9b77e3bc06736d162b41b0d8d0c7ef998abbb92"
+    },
+    "probe/src/main/assets/probe-240x320.json": {
+      "source": "probe/src/main/assets/probe-240x320.json",
+      "sha256": "0fe53e720821b232f611ed9bdd4416fff814cf3f8a0d2ed53ac88e48120e00a1"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/BleRtpPacketizer.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/BleRtpPacketizer.java",
+      "sha256": "70ae1a5fa57ad1fda6167f2bc5b381848be2540e4545df84c20d51733e3c84cc"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/CastConfiguration.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/CastConfiguration.java",
+      "sha256": "7ea8e1bedd5ee2f0d9c30d0e1e59df4aa91791097f2f24270e7f44bdaf721437"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/Mpeg2ProbeClip.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/Mpeg2ProbeClip.java",
+      "sha256": "80444a569f2b2134da2b3a4ecf56c92772ba5c332d7fd727a323a4242448fa2e"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/NinebotAdvertisement.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/NinebotAdvertisement.java",
+      "sha256": "058ee2293f6f7c1409ce792e23be034d1117828d7428f1f745297a502090e68f"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/NinebotProbeSession.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/NinebotProbeSession.java",
+      "sha256": "2be8c677c534ce164f9ba39add711ea3ca997689a99e499f3d8d91c3b5ae40f1"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/ProbeActivity.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/ProbeActivity.java",
+      "sha256": "d2636cb96880e3dd46e141bc74d3ff97fc9585687c44a102f36fb28bb64c67fc"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/ProbeGattClient.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/ProbeGattClient.java",
+      "sha256": "6c19ac5e8e688f8c58990e615241e7cd8e623e6f98a22483d831857633df6a4d"
+    },
+    "probe/src/main/java/com/motexa/ninebotbletest/ProbeJournal.java": {
+      "source": "probe/src/main/java/com/motexa/ninebotbletest/ProbeJournal.java",
+      "sha256": "f03e5b0188fd74b3a58686befec0e1181b3fb547fe808df9a540ae0ca7f3519e"
+    },
+    "probe/src/test/java/com/motexa/ninebotbletest/BleRtpPacketizerTest.java": {
+      "source": "probe/src/test/java/com/motexa/ninebotbletest/BleRtpPacketizerTest.java",
+      "sha256": "4afe55406826ff3460a70c5a916f7ec61a2c90d276ce075b5ed6b4522aa18cae"
+    },
+    "probe/src/test/java/com/motexa/ninebotbletest/CastConfigurationTest.java": {
+      "source": "probe/src/test/java/com/motexa/ninebotbletest/CastConfigurationTest.java",
+      "sha256": "8badf90541c64f84d230a2bd8728149acaeed81e11ee792f7548c060069a9887"
+    },
+    "probe/src/test/java/com/motexa/ninebotbletest/NinebotAdvertisementTest.java": {
+      "source": "probe/src/test/java/com/motexa/ninebotbletest/NinebotAdvertisementTest.java",
+      "sha256": "5416cf53e17f326993c6a8ad9a46f2e693f8b9e625a9ccd5c60bce6fd1031756"
+    },
+    "probe/src/test/java/com/motexa/ninebotbletest/NinebotProbeSessionTest.java": {
+      "source": "probe/src/test/java/com/motexa/ninebotbletest/NinebotProbeSessionTest.java",
+      "sha256": "12e5bd6154ce237d78009f9aeaa6528b126d72588846bd934c0fbdaac61d7006"
+    },
+    "probe/src/test/resources/probe-wire.properties": {
+      "source": "probe/src/test/resources/probe-wire.properties",
+      "sha256": "9bbfb7ee1f76c0b169a53a56aca3f89c694aafa0501db4b8064f0ee18bd8aeb5"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotEncryption2Codec.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotEncryption2Codec.java",
+      "sha256": "1cff78f97cb0007892f3a59c55f86f7ccf59a2f4314bca9d3823e04847a4333e"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotTelemetryCodec.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotTelemetryCodec.java",
+      "sha256": "2e79fcdd98a068ed38ffa609825d29a6e9229a36a7f1cd95a84ea222124868d3"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProfile.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProfile.java",
+      "sha256": "3f9f8c0a6604a5c88a5d18769529d986733aa69e6cf2f34abe2eef87cc52d937"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProtocolEngine.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProtocolEngine.java",
+      "sha256": "b235370e2288327871e5e797e7509edd416ff557673051cfb321c1307ec9c895"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProtocolSnapshotMapper.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProtocolSnapshotMapper.java",
+      "sha256": "ee4b9761969648386fad7672e4e1ea247fdec2105b52e297bdc12310e0ed6d68"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/AutomaticCapturePlan.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/AutomaticCapturePlan.java",
+      "sha256": "fefcb76b3ebbe249fe42a65b8694880ca0421c3873b75afb7c8cad5bf745f285"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/NinebotVehicleGattProfile.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/NinebotVehicleGattProfile.java",
+      "sha256": "8c93822c3609534d080fbe41c001fccb7b6c8e4bbacac977a5368f60ff1f1ba6"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProfileRuntimePlan.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProfileRuntimePlan.java",
+      "sha256": "f272c198cd8dbbb69cbb333524519b446bc82381b1ede09e0147592e21af9a92"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolGattChannel.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolGattChannel.java",
+      "sha256": "434d78f303402127b4a1689e6440c5c4854b6b1be45358eebaa4ca89949aa343"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolGattChannelResolver.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolGattChannelResolver.java",
+      "sha256": "929089952426a1a4d22c5ee7c14bb7194d170b6c8444729574f019c365f8d0bc"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolGattChannelResolvers.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolGattChannelResolvers.java",
+      "sha256": "3e89881c205ec3cbcfff23e72756229999ee51eaf3d05f29d944061fd016ec71"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolProfile.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/protocolcore/ProtocolProfile.java",
+      "sha256": "e163aff5877634b2e21d63947b2e569ac23ff22b42757d7b0216f5fd671db993"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/contract/ProtocolDescriptor.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/contract/ProtocolDescriptor.java",
+      "sha256": "e0d98c92fbbb91d3c934547715fba8b361f476ed733bbd40af01f62668255b94"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolEffect.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolEffect.java",
+      "sha256": "d652b2f9a82ce1fb7ccbc45101b88ee25dd5315169ce9250a10741dc3b40fee1"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolEngine.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolEngine.java",
+      "sha256": "ef43db5a123d112549071cadd3556e66f88f7c8696cf5754bec29be5710bb046"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolField.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolField.java",
+      "sha256": "5b0946eabd73f11d38df89b5e856236126d9bd14697559744f2d728dff7102ce"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolOperationResult.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolOperationResult.java",
+      "sha256": "0f0817b221bc213bc3f213b59711242ba4f56d8df52fc7fa939f6f257b953859"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolRuntimeInput.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolRuntimeInput.java",
+      "sha256": "940fdf206a8b8a205b9252ac5706a259f5c89f8a805a5ec0f55670d0004ef3b4"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolSnapshot.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolSnapshot.java",
+      "sha256": "1978c95488e235c1e6c03e6aa306401ea60b1da61a475e88fa13a54e82a4f011"
+    },
+    "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolValue.java": {
+      "source": "modules/ninebot-java/src/main/java/org/openninebot/reference/vehicle/protocol/ProtocolValue.java",
+      "sha256": "328eddc538d6ebed9df823a6a1d6e20f19b9c931b640179d56d49d1f0153deeb"
+    },
+    "modules/ninebot-java/src/test/java/org/openninebot/reference/app/NinebotVehicleProtocolEngineTest.java": {
+      "source": "modules/ninebot-java/src/test/java/org/openninebot/reference/app/NinebotVehicleProtocolEngineTest.java",
+      "sha256": "470b2461ecbf00ad51767c08207832865b175c403962bb69d225d042ebbe4d26"
+    },
+    "scripts/audit-source.py": {
+      "source": "scripts/audit-source.py",
+      "sha256": "90498a3e970ca01d597b6cd21083c4c60d2727cd75f327f5aead2ebd97fdd6d6"
+    },
+    "scripts/cast-codecs.lock.json": {
+      "source": "scripts/cast-codecs.lock.json",
+      "sha256": "7d717552dc65d0612a3407b32262ffe54a1ccd54bbfab33077de01d83c519cff"
+    },
+    "scripts/package-codecs.py": {
+      "source": "scripts/package-codecs.py",
+      "sha256": "7ad5462e892d3e6a19cd0557c88834f2beed366de884bfe2a206a7b37832a211"
+    },
+    "scripts/prepare-codecs.py": {
+      "source": "scripts/prepare-codecs.py",
+      "sha256": "2377ce396326ffe9615243d018b86abaf8a48e000cbfd689cea749cb55e3b991"
+    },
+    "scripts/prepare-native.py": {
+      "source": "scripts/prepare-native.py",
+      "sha256": "801ea38f367fea311e1e6ce158a904c5463f59ab0b0da697d01b02dfe56e3e4d"
+    },
+    "scripts/sign-update.py": {
+      "source": "scripts/sign-update.py",
+      "sha256": "097b9df8b6fc00982d7fbf5d9c9f91aa3de8daaaedf0fb602da3e3f9b4b8c1c9"
+    },
+    "config/update-public-key.txt": {
+      "source": "config/update-public-key.txt",
+      "sha256": "9aefcf4042f8d91a6e7e688a007145ce32b9932e4a5dcf51878f0df670c88b47"
+    },
+    "docs/log-upload.md": {
+      "source": "docs/log-upload.md",
+      "sha256": "98f8dff977f2fe26361efa961a82932dd0f1bde9a7d95a7b916296db8a1f4c35"
+    },
+    "docs/probe.md": {
+      "source": "docs/probe.md",
+      "sha256": "ba148c429c085a1422c3b284b969fbed46ab3a5270aa220b5ae5c2bfbcd1570f"
+    },
+    "docs/releasing.md": {
+      "source": "docs/releasing.md",
+      "sha256": "04da85722d9ab52039cc36ad4ebf45bbc8360166904aca000ceb6c925100c84e"
+    },
+    ".github/workflows/check.yml": {
+      "source": ".github/workflows/check.yml",
+      "sha256": "0eaf53eed8020333c2d414dfd2412ab6a7359bfaa37ea27c94eebf0a567ac647"
+    },
+    "gradle/wrapper/gradle-wrapper.jar": {
+      "source": "gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+    },
+    "gradle/wrapper/gradle-wrapper.properties": {
+      "source": "gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "5d98bd0eca5a749202444cc3dea4354c29108aac80d388994c0bc716a464a214"
+    },
+    "README.md": {
+      "source": "README.md",
+      "sha256": "7bedf633c9e954749a4b6f8face5140acb93ec502609538f9cdc48068f9977f0"
+    },
+    "LICENSE": {
+      "source": "LICENSE",
+      "sha256": "1ffdf539e390abed0bca4070daf3c55f379723b15bdcf5b6bdb72652783b618b"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "source": "THIRD_PARTY_NOTICES.md",
+      "sha256": "ad5c9119ae4f2af7f0134c9b5444ce3a441e966b78abfcd7d20f58bda84e809d"
+    },
+    ".gitignore": {
+      "source": ".gitignore",
+      "sha256": "bc551f8a628160b365addcd0023b726f86be2e4312440718143a9300a788a6e9"
+    },
+    "build.gradle": {
+      "source": "build.gradle",
+      "sha256": "60b7a2fd6e38f2b20e2dcf6eabba60023b02017286b23f6b69dbefa460a708a6"
+    },
+    "settings.gradle": {
+      "source": "settings.gradle",
+      "sha256": "db9dd44fde0608286165cdadbd70a1b14190b78508c28948141b4f655370193a"
+    },
+    "gradle.properties": {
+      "source": "gradle.properties",
+      "sha256": "283c6743f89b242720b5e8a8a526a2afeab98593f6cc91e37aeba2ba7cda4673"
+    },
+    "gradlew": {
+      "source": "gradlew",
+      "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+    },
+    "gradlew.bat": {
+      "source": "gradlew.bat",
+      "sha256": "94102713eb8fb22d032397924c0f38ab2da783ba60d07054339f1190a0c4e2cd"
+    },
+    "signing.properties.example": {
+      "source": "signing.properties.example",
+      "sha256": "0ebab29aab99ddf5a05fa5e5e16072c7b391e3ca9d8af2d4e9ce061456d2b5e5"
+    },
+    "app/build.gradle": {
+      "source": "app/build.gradle",
+      "sha256": "0dd3368bf944809b5ce36136099ab01fa201cdcafcb822d747d339cce69a0f5e"
+    },
+    "app/proguard-rules.pro": {
+      "source": "app/proguard-rules.pro",
+      "sha256": "1da86aae4d33e663bfd3dcc07ef3ee6a00c79ccdfab9a5655062b88dff528c68"
+    },
+    "app/lint.xml": {
+      "source": "app/lint.xml",
+      "sha256": "fa7be8dfb46aa0ab5f5d477e858359ec6f2ed6350fa5f89ec840f5ff2da24cd5"
+    },
+    "probe/build.gradle": {
+      "source": "probe/build.gradle",
+      "sha256": "bd513b8756abbd0a80a17f0c3f4388ba02bb6cb595d34b898f261cfe17c475ca"
+    },
+    "modules/ninebot-java/build.gradle": {
+      "source": "modules/ninebot-java/build.gradle",
+      "sha256": "cfa39ca664646900cd0ef128ef8e25013c49d0747644aaef0b1d6183519b1c92"
+    },
+    "modules/ninebot-cast-android/build.gradle": {
+      "source": "modules/ninebot-cast-android/build.gradle",
+      "sha256": "b7e5fda6885066d9a6e955cab401bdda1bfec10fefa9d491e009f8a77e5cfb67"
+    },
+    "modules/ninebot-cast-android/consumer-rules.pro": {
+      "source": "modules/ninebot-cast-android/consumer-rules.pro",
+      "sha256": "4e9598b3b4a11a09aee9d22ada311db3ae4272df0c4585f3be483a7f74a648ad"
+    },
+    "modules/ninebot-cast-android/native-core.mk": {
+      "source": "modules/ninebot-cast-android/native-core.mk",
+      "sha256": "619dab5cbbab3d71fa16a8e032216ceafa82b9086e471f354b764423f69397d2"
+    },
+    "modules/ninebot-cast-android/README.md": {
+      "source": "modules/ninebot-cast-android/README.md",
+      "sha256": "1330cafceb86f4a6d7560decbe25df650875aa9e7f9709e8e40b94ed2d732c73"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/cast_core.cpp": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/cast_core.cpp",
+      "sha256": "714732ef7283539c90078014bd7991e38d52772a3543880ce4aa4c5c0777e808"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/cast_core.h": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/cast_core.h",
+      "sha256": "fa7486bb55b1d38357f5ee427e313f9d2e07050ec8e2651c93bd0a7555272f42"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/cast_jni.cpp": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/cast_jni.cpp",
+      "sha256": "253050f97a8d3382c776f34b40cd05b4144be394ad4a658bf7718a03af6b595a"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/cast_protocol.cpp": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/cast_protocol.cpp",
+      "sha256": "215247bcdbe20aae1debeef813a26af2d595a2eb13c1c4529385bffe4fb0f1dc"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/cast_protocol.h": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/cast_protocol.h",
+      "sha256": "4aff4a6db2d1ccf585288885e8f5190d3af7b5261955192e5f96bcb47bb0975b"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/jni_strings.h": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/jni_strings.h",
+      "sha256": "52f2afa99529796f99f6998c42b756f79a05d10b5afbf820a534ebb43843637d"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/mpeg2_codec.cpp": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/mpeg2_codec.cpp",
+      "sha256": "55f4307c3108f0aed0521e4b51d3556cfef60c32253e40cc7024c31491fdcd37"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/ninebot_gen3.cpp": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/ninebot_gen3.cpp",
+      "sha256": "3df250c161474d8315f2397983bffc0068d0b2c0ecfa2c0dd480db06b8a4a88e"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/ninebot_gen3.h": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/ninebot_gen3.h",
+      "sha256": "ca9c58f752fd05b27e4192d12137d6207b9cfdc57420d6b70a3434500195c3db"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/ikcp.c": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/ikcp.c",
+      "sha256": "b4b337bb6267fb361a50b0b4f56c2fc34e067e75e8dc61cf48a603dcb5a7824a"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/ikcp.h": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/ikcp.h",
+      "sha256": "a8b1613daa4a452bf22d25af1cc3dd7e558937e212e7a70761a1ccf5ea6c6ef5"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/LICENSE": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/LICENSE",
+      "sha256": "6587fd02a924b97dbd6758b0573ddec056fb494a84f3709c5aaa33ce1f7f029c"
+    },
+    "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/UPSTREAM.md": {
+      "source": "modules/ninebot-cast-android/src/main/cpp/vendor/kcp/UPSTREAM.md",
+      "sha256": "315ca56e165ee04cd799bbcf695b20807772d914b4e614f86693d2b80b65db09"
+    },
+    "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/CastEngine.java": {
+      "source": "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/CastEngine.java",
+      "sha256": "313bd798ea4e4239fc391e1d46f0942aced4a71e82b63e280e48cf9dcba7eb64"
+    },
+    "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/Mpeg2Codec.java": {
+      "source": "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/Mpeg2Codec.java",
+      "sha256": "8bf8abd07c2bf9cd8900216da9a52824bc504859c21945a2ec05c99e6d602bbe"
+    },
+    "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/NativeCast.java": {
+      "source": "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/NativeCast.java",
+      "sha256": "d7a03565b308b634e4f6f62836ebcf01b7898a1338950c5d02c9a3f8323fba47"
+    },
+    "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/NativeRuntime.java": {
+      "source": "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/NativeRuntime.java",
+      "sha256": "f33a18654473aab5da3b3ee16d21d6ff2a636559f01a7026d1a4572a74b55150"
+    },
+    "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/NinebotCredentialProvider.java": {
+      "source": "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/NinebotCredentialProvider.java",
+      "sha256": "7b3e4e0b615a8ebff01c27fa8b4326de8d1d8b5e96e82572ccfc5f2f775dd8b6"
+    },
+    "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/VideoSource.java": {
+      "source": "modules/ninebot-cast-android/src/main/java/com/motexa/vehiclecast/VideoSource.java",
+      "sha256": "b028b6ba21ebabab56e8e376d2cea8b15a6fa868b94f5afba1b1f7e38e9931a7"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/CMakeLists.txt": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/CMakeLists.txt",
+      "sha256": "358875867622fc001fdd13bf8d0c776070d1f141cdcef90440ec60bedaf70d3b"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/core_tests.cpp": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/core_tests.cpp",
+      "sha256": "2a57b80e6cdff102bea14370565481e8bbedbde1be6d54619f1c9b51af4c6c0e"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/fixtures/mz-preparation-contract.json": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/fixtures/mz-preparation-contract.json",
+      "sha256": "eee470061687c7c1b4bb0e6dbdd1c967d27fd40b11b65ef4a5bcc1d94ebf52af"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/fixtures/original-crypto-validation.json": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/fixtures/original-crypto-validation.json",
+      "sha256": "afabb88fd4c4f6b6d9c12d80c47612a11c3bc35757bc38f97cc89dcfe27c25b6"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/fixtures/probe-vectors.json": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/fixtures/probe-vectors.json",
+      "sha256": "bcab97a01ff8dec1c89c8ced60461fb3a3c18f44a156857e448e50bea9814d64"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/fixtures/v23-full-auth-boundary-validation.json": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/fixtures/v23-full-auth-boundary-validation.json",
+      "sha256": "615f14701e8aea15cd45d1020615ae29978d7b552239881263df9b2c1494dabe"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/fixtures/v23-session-boundary-validation.json": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/fixtures/v23-session-boundary-validation.json",
+      "sha256": "0e226d709f0d7d3c84246b3cbc0a57b5ca5345792e958836c2b084661c571040"
+    },
+    "modules/ninebot-cast-android/src/test/cpp/fixtures/v3-common-wire-validation.json": {
+      "source": "modules/ninebot-cast-android/src/test/cpp/fixtures/v3-common-wire-validation.json",
+      "sha256": "250474fceb4f732c9b3c0c04d897951c23007f629a874ea04c49230c3eed24fb"
+    },
+    "modules/cast-lab-common/README.md": {
+      "source": "modules/cast-lab-common/README.md",
+      "sha256": "5881fc093bc62b1f22406b35dffa2fc1df3baa5028543dc7723c792431c61706"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/AvcAnnexB.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/AvcAnnexB.java",
+      "sha256": "1a2f30988419f676165297e1f67228a3463f30396af2234ff059968853a347f7"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/AvcStreamInfo.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/AvcStreamInfo.java",
+      "sha256": "543c6fc5e0c9c7af271489bcb95572d7b80a6e872a7286905090b1372120b67f"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastInstrumentView.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastInstrumentView.java",
+      "sha256": "3c484d0c3fe33a1fa6536aa9f0b5f3ebb63d655d8d06eb52f38d603430c4e7a7"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastPalette.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastPalette.java",
+      "sha256": "59ef1be9a044e2f26f4ed6ddbe52e0e0e56f6440fb81dc742819e498d27e4048"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastSessionPower.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastSessionPower.java",
+      "sha256": "09b7ec3e62b371d5194035f70115b9dafe0a39fedf50e9b2c3d2f8f3935db11f"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/DetailedTrace.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/DetailedTrace.java",
+      "sha256": "039eaf53b0927618831d7f0b3d50263cfe57b5bdefd8192db4999f856a615bfe"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/DurableTextFile.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/DurableTextFile.java",
+      "sha256": "3ff31c4492d80aa25d397024af69e34ee12555347b8687503f29ba8afc89cd83"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/FrameOutputWatchdog.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/FrameOutputWatchdog.java",
+      "sha256": "c78c736203ffc5fe7ac481248a8818d0542a3b78895ab4c7f5e6a64e3d6a671e"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastEncoder.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastEncoder.java",
+      "sha256": "c436fa728f74b6cb7eab7ad299e786c2e94ed4cd38fe8a1f9c4b0966fdc5d576"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastMetrics.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastMetrics.java",
+      "sha256": "6540b6d9373c34b1f1cbb549e0bed09e5dcc09341ad6da1696b44af4c4232fff"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastUi.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastUi.java",
+      "sha256": "779b03977f4ec1e49aefc7ecc3b6f3c3f9b27b84873a2bc20fbd641bcf1da897"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastVideoInput.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/CastVideoInput.java",
+      "sha256": "d824e66a9025001fb2f0c1ec5045ddcb8ade3f92778e1451ac02f3c8edcd0ebf"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/PaletteVideoInput.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/PaletteVideoInput.java",
+      "sha256": "8133824d5a64d9a6e0038b68f339d94ac50d7ec7062a7db47faf64c8e5c31a2b"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/ScreenVideoInput.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/ScreenVideoInput.java",
+      "sha256": "2f73f5228865dd49dae3611d4ec46e0d288b35b8079d237129ac3da71193818f"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/SessionLog.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/SessionLog.java",
+      "sha256": "70ac35d58531773191431b6e1831a420a46bc9f814f274836d5deaa292f6bf0d"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/TestPatternVideoInput.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/TestPatternVideoInput.java",
+      "sha256": "18045995c07d33b89d3096e790f100cfb38dfb83b89e5c89dca1c11804152e81"
+    },
+    "modules/cast-lab-common/src/main/java/com/motexa/openninebot/VideoFramePacer.java": {
+      "source": "modules/cast-lab-common/src/main/java/com/motexa/openninebot/VideoFramePacer.java",
+      "sha256": "a45804acc359e61afbbcb61eba6ef6802f5077cbf920ddbbd4ef0fff63a5ed91"
+    },
+    "docs/research/archive/ninebot-research-github/docs/research/ninebot-gen3-20261009/evidence-summary.json": {
+      "source": "docs/research/archive/ninebot-research-github/docs/research/ninebot-gen3-20261009/evidence-summary.json",
+      "sha256": "f01678aa99f23fb21ce03bd2d6ee3b63e3b41b9ef8be56988760da727f8e56c2"
+    },
+    "docs/research/archive/ninebot-research-github/docs/research/ninebot-static-gap-20261009/evidence-summary.json": {
+      "source": "docs/research/archive/ninebot-research-github/docs/research/ninebot-static-gap-20261009/evidence-summary.json",
+      "sha256": "e1d02005a351faebb097c329cbdcaaa0ff4c8433346cf39ec464124d799a1c9a"
+    },
+    "docs/research/archive/ninebot-research-github/docs/research/ninebot-static-gap-20261009/rea-followup-20261010.json": {
+      "source": "docs/research/archive/ninebot-research-github/docs/research/ninebot-static-gap-20261009/rea-followup-20261010.json",
+      "sha256": "f446dfc17a64a1f27746514725ccade83f82dd86132ff9692dd4cc94c35f7127"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/emulate_original_crypto.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/emulate_original_crypto.py",
+      "sha256": "32476c232efaf0cf0eeca4c3c04f5e6df6875c5db043b3aab5f1bb4822b28c4c"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/hci-advertising-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/hci-advertising-validation.json",
+      "sha256": "d61e06090c7c183e229f166fa9fedb1d50133468c9a88f29f88c08ee9425af63"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/hci-review-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/hci-review-validation.json",
+      "sha256": "35b6063106d7963b45fbf79f426c5f9cccbb287c0be58631c58aff06b0a06a5f"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/original-crypto-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/original-crypto-validation.json",
+      "sha256": "afabb88fd4c4f6b6d9c12d80c47612a11c3bc35757bc38f97cc89dcfe27c25b6"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/probe-vectors.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/probe-vectors.json",
+      "sha256": "bcab97a01ff8dec1c89c8ced60461fb3a3c18f44a156857e448e50bea9814d64"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/review_hci_boundaries.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/review_hci_boundaries.py",
+      "sha256": "2666d686b56ce0500eb91430f28b4cb14bc55b5ab32b48b8eb54135098412942"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/session-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen2/session-validation.json",
+      "sha256": "7f1686deddc50d35e7bfa2bf1605b04cc9dfdf1667afa4c4516df7b9d79531c1"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_fast_auth.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_fast_auth.py",
+      "sha256": "60f40e68bf71e5aff28d60e4af702d5cb74cdabe19b6d05e0365e03e0ab79bc4"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_hex_key.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_hex_key.py",
+      "sha256": "0e1fca4dfef4412e36f936b622c65aa5cc9f7130b93eb373185439b437aa46eb"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_secret_boundary.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_secret_boundary.py",
+      "sha256": "ba1b4331c15fb8a22dc7169bbf3b456cbe8810c6005684be3dc1e3f3cc52363a"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_v23_full_auth.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_v23_full_auth.py",
+      "sha256": "204db00ee5b19a063b2d447c759dcfef1128cb7959e4fbc82b507fb4b20d7c72"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_v23_session.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_v23_session.py",
+      "sha256": "0de88bc9fb599a687c331e2c124f634b61d6c594bf4350b7a466f5a129b86b79"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_v3_wire.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/emulate_v3_wire.py",
+      "sha256": "79c20ef378f9b99ce4527f115df140d3ab5db3a5741014c5e22c4beccd4cd20e"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/fast-auth-crypto-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/fast-auth-crypto-validation.json",
+      "sha256": "9bc499e39e980358fb7352ee1d3625fcd57ca0e6f794518ebbf50454218b76b3"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/hex-key-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/hex-key-validation.json",
+      "sha256": "d0c6d2ce1a57ce429344cf779e6da3a857693dd77136d1bab2afe3b37e1b0866"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/locate_auth.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/locate_auth.py",
+      "sha256": "a3f680878db185dba7cd1438e13c3536edcd44caa939316c9b4a4edde877256f"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/native_trace.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/native_trace.py",
+      "sha256": "925fdd80db8ddbfa9dee41fd188f78b4a9448b0fe1cfa484852beee399d8eb57"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/secret-boundary-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/secret-boundary-validation.json",
+      "sha256": "86f466d908bc06b1794804ff86caa37387312a866b4e0cd37be6c39ea423d3dd"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/v23-full-auth-boundary-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/v23-full-auth-boundary-validation.json",
+      "sha256": "615f14701e8aea15cd45d1020615ae29978d7b552239881263df9b2c1494dabe"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/v23-session-boundary-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/v23-session-boundary-validation.json",
+      "sha256": "0e226d709f0d7d3c84246b3cbc0a57b5ca5345792e958836c2b084661c571040"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/v3-common-wire-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/gen3-auth/v3-common-wire-validation.json",
+      "sha256": "250474fceb4f732c9b3c0c04d897951c23007f629a874ea04c49230c3eed24fb"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/catalog-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/catalog-validation.json",
+      "sha256": "9d4a0a8e52199410855582dc8bd15841d76b25e08ea4a9c4a82051aa0695230b"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/connect-ui-configs.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/connect-ui-configs.json",
+      "sha256": "426b8794570061cf4f56c2eec328e4c1249c6a3a3b5b0526ab0305b220feb7f4"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/cross_validate_fast_auth.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/cross_validate_fast_auth.py",
+      "sha256": "2d0c326e657f8be1598a44b6ab8cc4585e911de27280d7717e113080de761ee9"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/cross_validate_gen3.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/cross_validate_gen3.py",
+      "sha256": "1d975f08620dbc9b4ec93233211d410882bda02d4effefecffee523e15008c7b"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/fast-auth-map-cross-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/fast-auth-map-cross-validation.json",
+      "sha256": "39a94bd6a00b8a74c99717ed94b0c4cccd216bdd50e0246283fa528f418c24f0"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/gen3-cross-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/gen3-cross-validation.json",
+      "sha256": "ac1b9ebc0a4aae3145ba2dc7fbe9914fbb01037272f85097b11909be6e1aa4b8"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/model-catalog.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/model-catalog.json",
+      "sha256": "14410a7d8e648279f02ef059f9b77e3bc06736d162b41b0d8d0c7ef998abbb92"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/original-method-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/original-method-validation.json",
+      "sha256": "ceed937fff66f2bd2341653af319cc317c6e5ee50fd29f2597fcceea8a0b4b4d"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/prepare_validation.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/official-connect/prepare_validation.py",
+      "sha256": "934eccaa79c23fa5dfb5e264c74c6f02fd3fac8a1f7237bee54c2d13ca20564d"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/validate-delivery.py": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/validate-delivery.py",
+      "sha256": "aa1014195c4e4e53418f559018eaa71bc27882fed9b0ef810cc9655ade041fdd"
+    },
+    "docs/research/archive/artifacts/ninebot-connection-repro-20261115/validation-summary.json": {
+      "source": "docs/research/archive/artifacts/ninebot-connection-repro-20261115/validation-summary.json",
+      "sha256": "532b7877ed298c3a4aa5131a2ed63625ddafa8fe89aac0d9a144af27a252dbd8"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/emulate_gatt_boundary.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/emulate_gatt_boundary.py",
+      "sha256": "0f6d76dd2226cc8d80aebd9ec682d26b7ede62d74819b2631098e9b502612b91"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/gatt-boundary-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/gatt-boundary-validation.json",
+      "sha256": "059e6da273962237494732fe5312c857285cbf5204a3840c1fc8b10b88958d0d"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/native_trace.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/native_trace.py",
+      "sha256": "dfee8b68ab87a7c1d2b9107837a6cc9c5822b9cfdf67611d7817fb4a5d139fe6"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/review_root_forward.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/ble-security/review_root_forward.py",
+      "sha256": "1c3befdc9b127ad3fd6a440ba9950ba205a52cc3b699b3461a91af3bd9840ec3"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/control-config/emulate_rtp_forward.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/control-config/emulate_rtp_forward.py",
+      "sha256": "155f0c5314f9a5bbe1641dd69375cd4f9c347611f4347da84ba8a8f12b233f78"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/control-config/inspect_bridge.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/control-config/inspect_bridge.py",
+      "sha256": "a944db739d09cf6cbc333b7e72fb58804e888c8397c763aaa0df27de98136bef"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/control-config/native-forward-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/control-config/native-forward-validation.json",
+      "sha256": "0fd465edb9f1f5e738e0df9bfa6742d547d55cc07c131ae4eb4258ec7a2913a5"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/cross-review-native-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/cross-review-native-validation.json",
+      "sha256": "9f38386c182e7f6ce82f37997feb27c7ab07f3fa461e6017949e3e4d09970382"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/review_native.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/review_native.py",
+      "sha256": "fde388bacc2ad217ee9248ecf3043e80aef69d93b0447ba5104aa9310e34ad87"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/session-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/session-validation.json",
+      "sha256": "c943be82861b763fc7d31255b376006866d9addec52884c9def50d68d136463c"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/java-media/validation.json",
+      "sha256": "e7c11e4dde5fd6a0da878c361fe2e7ff38cbe68a0056d48d5113e8e287f7ce2b"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/cross-java-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/cross-java-validation.json",
+      "sha256": "7562c311a262b39c88961b95a8772db727b83d4768c10f9c37973ff43602d813"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/cross_review_java.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/cross_review_java.py",
+      "sha256": "d085ca8393db0643f3b8b8369d707a49fa20ea060f5212eec3f39a2f4a59d3c0"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/field_refs.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/field_refs.py",
+      "sha256": "198c0202b006acdb772e4f335e8298c4b40a16cf2421e1de155b5f52c37303dd"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/layout_candidates.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/layout_candidates.py",
+      "sha256": "3eeaafd6c2f13faa9739bb5f9712c20c0d0e3f35fa1bc01febf433e4c4e6c669"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/probe.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/probe.py",
+      "sha256": "c1efca7ba00f081c9c401a0b3c5a9a0f7a37ca264e123bb3cb54b89051eb86b4"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/refs.py": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/native-rtp/refs.py",
+      "sha256": "2ed7d9ecd2a1ab48f724b68ae114d0261c38aa879c35f233891e923f446d529c"
+    },
+    "docs/research/archive/artifacts/ninebot-ble-cast-20261115/validation-summary.json": {
+      "source": "docs/research/archive/artifacts/ninebot-ble-cast-20261115/validation-summary.json",
+      "sha256": "1ff263aa02638094413d65932def3eb0a8f1e44a48e070033abfeee5fdda59fe"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/connection-auth/run_validation.py": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/connection-auth/run_validation.py",
+      "sha256": "b86cf2bea6fe2a64423fe32611c74f2a74c60319709ae15b2b6697fb4b84898e"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/connection-auth/validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/connection-auth/validation.json",
+      "sha256": "d6e9387e225b7883a55bff07bf7a8ef2048e09a974440e42eedbd4e617f97aa0"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/h264-rtp/export-dex-evidence.py": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/h264-rtp/export-dex-evidence.py",
+      "sha256": "ab47b1b3309a842426e666f8e2e35a52db851b91576c645b6b78ca9c41b2f22c"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/h264-rtp/validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/h264-rtp/validation.json",
+      "sha256": "37f3ab49722e3c86a4fa8f4d5f78b488a8fec1f601294ab618d9363d68dcdbde"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/cross-kcp-interop-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/cross-kcp-interop-validation.json",
+      "sha256": "28c795b16640a3eda0616e6ea35a9578a279e4e184557820c39b12d3cc362856"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/cross-kcp-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/cross-kcp-validation.json",
+      "sha256": "8e3070f569b15d82f546bc40c44b0cefaa77f29b9b4aecb75d57ea3c4302657c"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/validation.json",
+      "sha256": "e8a0d7b2d225f47a8084e33e32c3ac0598948cf7426af83d5a9f844241e1cecd"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/verify_jpeg.py": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/jpeg/verify_jpeg.py",
+      "sha256": "1ea40f80862fc5db540a46ee89a8f0b1c6d2deb0582f0b5431fb816c65bfc692"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/kcp/cross-h264-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/kcp/cross-h264-validation.json",
+      "sha256": "37f3ab49722e3c86a4fa8f4d5f78b488a8fec1f601294ab618d9363d68dcdbde"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/kcp/interop-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/kcp/interop-validation.json",
+      "sha256": "9d27d9af5b50b73e74da6af4c5cb01a558cf9f48243da1479316e975ec8848da"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/kcp/validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/kcp/validation.json",
+      "sha256": "86af5499a4b8e5c0ec41f93d8e230c756fc322e05b30a571a59965c2db8518f3"
+    },
+    "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/validation-summary.json": {
+      "source": "docs/research/archive/artifacts/ninebot-pro-protocol-20261114/validation-summary.json",
+      "sha256": "594a6ac3a97a05d6be356923f42994433c0e8e24fc14ba93e6bbe5cb8ec3de71"
+    },
+    "docs/research/archive/artifacts/ninebot-mz-verify-20261116/mz-device-ui-connect.json": {
+      "source": "docs/research/archive/artifacts/ninebot-mz-verify-20261116/mz-device-ui-connect.json",
+      "sha256": "a65f0acc17e4fe922e0df4ed517b81ccc6239b05999d29fa035691efb4664665"
+    },
+    "docs/research/archive/artifacts/ninebot-mz-verify-20261116/mz-preparation-contract.json": {
+      "source": "docs/research/archive/artifacts/ninebot-mz-verify-20261116/mz-preparation-contract.json",
+      "sha256": "eee470061687c7c1b4bb0e6dbdd1c967d27fd40b11b65ef4a5bcc1d94ebf52af"
+    },
+    "docs/research/archive/artifacts/ninebot-mz-verify-20261116/original-config-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-mz-verify-20261116/original-config-validation.json",
+      "sha256": "978dcd0466a0d547b61859d6305f4ead056cf079e2a72582b64532d02b997186"
+    },
+    "docs/research/archive/artifacts/ninebot-mz-verify-20261116/package-signature-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-mz-verify-20261116/package-signature-validation.json",
+      "sha256": "23f2c0c0286673942d126025b8b04ca9da29d2af097879312c40c1b406760504"
+    },
+    "docs/research/archive/artifacts/ninebot-mz-verify-20261116/recovery-validation.json": {
+      "source": "docs/research/archive/artifacts/ninebot-mz-verify-20261116/recovery-validation.json",
+      "sha256": "36786c784e991308de254342eb49dc251e04b7f1bdfa842091cfadd41e044b8e"
+    }
+  },
+  "researchDocuments": 60
+}

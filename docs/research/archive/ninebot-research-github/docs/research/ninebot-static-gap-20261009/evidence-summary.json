@@ -1,0 +1,565 @@
+{
+  "research_date": "2026-10-09",
+  "vehicle_present": false,
+  "mode": "static and offline packet encoding only",
+  "official_app_version": "6.10.11",
+  "native_hashes": {
+    "libnbcrypto.so": "21e594e8d8dedeb5cc04942a763cab7b88f4686980bcc543be9cf3cf344b9ca2",
+    "libnbenc_ffi.so": "5f8d9985088ae335ea705119823567d51b75cd3e2f530570d5ae9b32f2774e59",
+    "librust_lib.so": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188"
+  },
+  "packet_vectors": [
+    {
+      "extension_picture_type": 1,
+      "marker": false,
+      "sequence": 4660,
+      "timestamp": 16909060,
+      "ssrc": 287454020,
+      "payload_hex": "000001657f",
+      "packet_hex": "9020123401020304112233440000000100010000000001657f",
+      "python_matches_java": true
+    },
+    {
+      "extension_picture_type": 1,
+      "marker": true,
+      "sequence": 4660,
+      "timestamp": 16909060,
+      "ssrc": 287454020,
+      "payload_hex": "000001657f",
+      "packet_hex": "90a0123401020304112233440000000100010000000001657f",
+      "python_matches_java": true
+    },
+    {
+      "extension_picture_type": 2,
+      "marker": false,
+      "sequence": 4660,
+      "timestamp": 16909060,
+      "ssrc": 287454020,
+      "payload_hex": "000001657f",
+      "packet_hex": "9020123401020304112233440000000100020000000001657f",
+      "python_matches_java": true
+    },
+    {
+      "extension_picture_type": 2,
+      "marker": true,
+      "sequence": 4660,
+      "timestamp": 16909060,
+      "ssrc": 287454020,
+      "payload_hex": "000001657f",
+      "packet_hex": "90a0123401020304112233440000000100020000000001657f",
+      "python_matches_java": true
+    }
+  ],
+  "packet_layout": {
+    "header_bytes": 20,
+    "wifi_payload_type": 32,
+    "ble_java_payload_type": 0,
+    "ble_wire_payload_type": "unverified after native RtpHandler processing",
+    "timestamp_source": "System.currentTimeMillis(), low 32 bits on wire",
+    "extension_id": 0,
+    "extension_words": 1,
+    "extension_frame_type_mapping": "capture frameType == 2 -> 1, otherwise 2",
+    "wifi_payload_max": 1400,
+    "ble_payload_max": "device MTU - 27",
+    "wifi_peer_participant_ssrc": 1,
+    "wifi_local_media_ssrc": "generated randomly by RTPSession; not the peer participant value",
+    "ble_local_media_ssrc": "generated randomly by BleRTPSession"
+  },
+  "cast_control": {
+    "start_command": "setNaviStart",
+    "payload": {
+      "stop": "00",
+      "SimpleNavi": "01",
+      "MapNavi": "02",
+      "Cruise": "03"
+    },
+    "success_test": "callback NbFrame != null; not proof that the dashboard displayed a frame"
+  },
+  "config_read": {
+    "file_type": 1,
+    "begin_command": 130,
+    "read_command": 131,
+    "verify_command": 132,
+    "begin_payload_hex": "010800",
+    "begin_index": 1,
+    "file_length_encoding": "little endian, up to 4 bytes via getIntAt",
+    "response_pack_count": 8,
+    "length_pack_unit": 128,
+    "big_pack_index": "low byte of group index",
+    "small_pack_index": "0..min(8, remaining_pack_count)-1, ordered within group",
+    "out_of_order_handling": "readLen=successLen; smallPackIndex=0; current wait remains active",
+    "timeouts_ms": {
+      "begin": 1000,
+      "group": 4000,
+      "verify": 1000
+    },
+    "generic_write_max_attempts": 6,
+    "generic_retry_delay_ms": 300,
+    "group_max_attempts": 7,
+    "group_internal_retry": false,
+    "verify": "index 0 and 16-byte device MD5, compared with local file MD5",
+    "md5_mismatch": "second verify read, then -3 on mismatch",
+    "timeout_error": -2,
+    "exception_error": -1,
+    "cache": "optional preliminary MD5 comparison, case insensitive; matching cache skips download",
+    "warning": "This is read-command traffic over BLE writes; no firmware upload or vehicle setting write. Partial group timeouts do not explicitly reset readLen in startReadImpl."
+  },
+  "rtcp_heartbeat": {
+    "packet_type": 204,
+    "subtype": 5,
+    "name_hex": "6d707600",
+    "header_encoding": "network byte order",
+    "payload_encoding": "32-bit little-endian sendIndex",
+    "outgoing_packet_bytes": 16,
+    "ble_sender_ssrc": 1,
+    "wifi_sender_ssrc": "peer Participant SSRC (initially 1), passed to getHeartBeatPkt",
+    "reply_fields": {
+      "offset_0": "echo index when at least 4 bytes",
+      "offset_4": "mode when at least 8 bytes",
+      "offset_8": "KCP conv in Wi-Fi RtpSender when at least 12 bytes"
+    },
+    "ble_enable_caveat": "DeviceScreenCastRequest builder creates ScreenCastDataSender(device,false); NBBleSender.sendRtcp returns true without sending when false",
+    "ble_timeout": "sendIndex - receiveIndex > heartBeatTimeout",
+    "wifi_timeout": "heartBeatMissCount > heartBeatTimeout; each reply resets miss count",
+    "vectors": [
+      {
+        "index": 0,
+        "packet_hex": "85cc0003000000016d70760000000000",
+        "python_matches_java": true
+      },
+      {
+        "index": 16909060,
+        "packet_hex": "85cc0003000000016d70760004030201",
+        "python_matches_java": true
+      },
+      {
+        "index": -1,
+        "packet_hex": "85cc0003000000016d707600ffffffff",
+        "python_matches_java": true
+      }
+    ]
+  },
+  "cast_configuration": {
+    "channels": {
+      "0": "BLE",
+      "1": "WIFI",
+      "2": "WIFI_KCP"
+    },
+    "channel_selection": "rtpChannel when valid; otherwise channel; otherwise BLE",
+    "codec_type": {
+      "0": "Mpeg2",
+      "1": "H264",
+      "2": "MJPEG"
+    },
+    "codec_name_fallback": [
+      "h264",
+      "mjpeg",
+      "mpeg2"
+    ],
+    "unknown_codec": "IllegalArgumentException",
+    "width_priority": [
+      "codecWidth",
+      "dimensionWidth",
+      240
+    ],
+    "height_priority": [
+      "codecHeight",
+      "dimensionHeight",
+      320
+    ],
+    "video_mapping": {
+      "bitRate": "videoBitrate",
+      "gopSize": "gopSize",
+      "maxBFrame": "maxBFrames",
+      "frameRate": "Double frameRate"
+    },
+    "scaleBitmap": false,
+    "fields_not_consumed_in_selected_builder": [
+      "max_bit_rate",
+      "hearBeat",
+      "rtcpChannel"
+    ],
+    "warning": "Fallback dimensions and enum branches are not evidence of any particular vehicle display or firmware capability."
+  },
+  "ble_transport": {
+    "legacy_rtp_write_uuid": "6e400002-0000-0000-006e-696e65626f74",
+    "legacy_rtcp_write_uuid": "6e400003-0000-0000-006e-696e65626f74",
+    "rtcp_notify_uuid": "6e400004-0000-0000-006e-696e65626f74",
+    "sdk_path": "NbBluetoothDevice.writeRtp -> BleSdkClient.writeRtpData -> RustBridge.writeRtpData",
+    "send_attempts_max": 20,
+    "delay_after_failed_send_ms": 2,
+    "delay_warning": "Delay applies only after a failed send with attempts remaining, not after every packet",
+    "queue_full_count": 3,
+    "queue_drop_frame_threshold": 2
+  },
+  "kcp_transport": {
+    "encapsulation": "encoded RTP packet -> Ukcp.kcpSend -> native KCP -> UDP",
+    "initial_conv": 0,
+    "nodelay_arguments": [
+      2,
+      100,
+      2,
+      1
+    ],
+    "mtu": 1444,
+    "window_send": 10240,
+    "window_receive": 10240,
+    "conv_update": "APP subtype 5 payload offset 8 little-endian -> kcpConv -> onHeartBeat -> restartKcpIfNeeded",
+    "three_timeout_callbacks": "setSendEnable(false)",
+    "native_library": "libkcp.so (not analyzed in this pass)",
+    "warning": "Java wrapper settings confirmed; native parameter semantics and vehicle interoperability unverified"
+  },
+  "model_command_evidence": {
+    "14101": [
+      {
+        "s_data": 16,
+        "s_index": 227,
+        "ops": "read",
+        "module": "tft",
+        "name": "rSSID",
+        "r_index": 227
+      },
+      {
+        "s_data": 8,
+        "s_index": 235,
+        "ops": "read",
+        "module": "tft",
+        "name": "rPASSWORD",
+        "r_index": 235
+      },
+      {
+        "s_data": 4,
+        "s_index": 241,
+        "ops": "read",
+        "module": "tft",
+        "name": "rPORT",
+        "r_index": 241
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_begin",
+        "retry": 0,
+        "s_cmd": 130
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_data",
+        "s_cmd": 131
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_verify",
+        "s_cmd": 132
+      },
+      {
+        "s_index": 0,
+        "ops": "write",
+        "module": "tft",
+        "name": "setNaviStart",
+        "r_cmd": 113,
+        "s_cmd": 113
+      },
+      {
+        "s_index": 48,
+        "ops": "writeNR",
+        "module": "tft",
+        "name": "rAppNaviState",
+        "r_index": 48,
+        "r_cmd": 113,
+        "s_cmd": 113
+      },
+      {
+        "s_data": 4,
+        "s_index": 243,
+        "ops": "read",
+        "module": "tft",
+        "name": "rWifiPORT",
+        "r_index": 243
+      },
+      {
+        "s_index": 250,
+        "ops": "writeNR",
+        "module": "tft",
+        "name": "setWiFiChannel",
+        "r_index": 250
+      }
+    ],
+    "14357": [
+      {
+        "s_data": 16,
+        "s_index": 227,
+        "ops": "read",
+        "module": "tft",
+        "name": "rSSID",
+        "r_index": 227
+      },
+      {
+        "s_data": 8,
+        "s_index": 235,
+        "ops": "read",
+        "module": "tft",
+        "name": "rPASSWORD",
+        "r_index": 235
+      },
+      {
+        "s_data": 4,
+        "s_index": 241,
+        "ops": "read",
+        "module": "tft",
+        "name": "rPORT",
+        "r_index": 241
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_begin",
+        "retry": 0,
+        "s_cmd": 130
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_data",
+        "s_cmd": 131
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_verify",
+        "s_cmd": 132
+      },
+      {
+        "s_index": 0,
+        "ops": "write",
+        "module": "tft",
+        "name": "setNaviStart",
+        "r_cmd": 113,
+        "s_cmd": 113
+      },
+      {
+        "s_index": 48,
+        "ops": "writeNR",
+        "module": "tft",
+        "name": "rAppNaviState",
+        "r_index": 48,
+        "r_cmd": 113,
+        "s_cmd": 113
+      },
+      {
+        "s_data": 4,
+        "s_index": 243,
+        "ops": "read",
+        "module": "tft",
+        "name": "rWifiPORT",
+        "r_index": 243
+      },
+      {
+        "s_index": 250,
+        "ops": "writeNR",
+        "module": "tft",
+        "name": "setWiFiChannel",
+        "r_index": 250
+      }
+    ],
+    "14360": [
+      {
+        "s_data": 16,
+        "s_index": 227,
+        "ops": "read",
+        "module": "tft",
+        "name": "rSSID",
+        "r_index": 227
+      },
+      {
+        "s_data": 8,
+        "s_index": 235,
+        "ops": "read",
+        "module": "tft",
+        "name": "rPASSWORD",
+        "r_index": 235
+      },
+      {
+        "s_data": 4,
+        "s_index": 241,
+        "ops": "read",
+        "module": "tft",
+        "name": "rPORT",
+        "r_index": 241
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_begin",
+        "retry": 0,
+        "s_cmd": 130
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_data",
+        "s_cmd": 131
+      },
+      {
+        "s_index": 0,
+        "module": "tft",
+        "name": "file_read_verify",
+        "s_cmd": 132
+      },
+      {
+        "s_index": 0,
+        "ops": "write",
+        "module": "tft",
+        "name": "setNaviStart",
+        "r_cmd": 113,
+        "s_cmd": 113
+      },
+      {
+        "s_index": 48,
+        "ops": "writeNR",
+        "module": "tft",
+        "name": "rAppNaviState",
+        "r_index": 48,
+        "r_cmd": 113,
+        "s_cmd": 113
+      },
+      {
+        "s_data": 4,
+        "s_index": 243,
+        "ops": "read",
+        "module": "tft",
+        "name": "rWifiPORT",
+        "r_index": 243
+      },
+      {
+        "s_index": 250,
+        "ops": "writeNR",
+        "module": "tft",
+        "name": "setWiFiChannel",
+        "r_index": 250
+      }
+    ]
+  },
+  "native_cloud_endpoints": [
+    {
+      "path": "/sdk/api/bluetooth3/auth/v1/handshake/challenge",
+      "function_offset": "0x2f70a0"
+    },
+    {
+      "path": "/sdk/api/bluetooth3/auth/v1/handshake/response",
+      "function_offset": "0x2f2bf4"
+    },
+    {
+      "path": "/sdk/api/bluetooth3/auth/v1/session-key/verify",
+      "function_offset": "0x2dd328"
+    },
+    {
+      "path": "/sdk/api/bluetooth3/auth/v1/session-key/refresh",
+      "function_offset": "0x2e22e4"
+    }
+  ],
+  "native_endpoint_caveat": "Endpoint/POST/header references confirmed; related functions log v2_3. Relationship to every V3_2 authentication branch is not fully traced.",
+  "native_request_headers": [
+    "X-Ctx-Hash",
+    "X-Nonce",
+    "X-Timestamp",
+    "X-Jti"
+  ],
+  "native_request_serializer": {
+    "function_offset": "0x2ba96c",
+    "fields": [
+      "useCase",
+      "version",
+      "level",
+      "sn",
+      "pn",
+      "nonce",
+      "deviceSign",
+      "pkDeviceTemp",
+      "clientCert"
+    ],
+    "caller_function_offset": "0x2f2bf4"
+  },
+  "native_v3_secret_validation": {
+    "version_3_branch": "0x37e200",
+    "requires": [
+      "sn",
+      "session_key_hex"
+    ],
+    "validator_function": "0x383b58",
+    "validation": "one enabled validation path checks 32 hexadecimal UTF-8 bytes, accepts 0-9/A-F/a-f",
+    "global_bypass_flag_present": true,
+    "warning": "Syntax check does not prove appEnc is directly usable as the final AES key; SN-linked processing remains."
+  },
+  "native_secret_storage": {
+    "trace": [
+      "0x37e1e4 -> 0x383b58",
+      "0x383b58 -> 0x37d4bc after hexadecimal validation",
+      "0x37d4bc -> 0x37d7e0 -> 0x59ff30 -> 0x59fce4"
+    ],
+    "keyring_core_evidence": "0x59fce4 references keyring-core::build_default_credential",
+    "credential_service": "com.ninebot.blelibrary",
+    "credential_user_input": "SN passed from SecretInfo",
+    "key_value_path": "0x37d4bc transforms key text into a buffer and invokes credential vtable via 0x59feec",
+    "empty_key_path": "0x37e360 -> 0x383d20 -> 0x37d6a8 -> credential vtable via 0x59ff0c",
+    "warning": "Keyring access identified. Vtable trait methods, storage alias transformation, returned value conversion and final BLE AES key remain unverified."
+  },
+  "unresolved": [
+    "V3_2 exact wire state machine",
+    "nonce, tag, signature/certificate conversions",
+    "native cloud signing/canonicalization",
+    "BLE native RTP transform and encryption",
+    "target instrument configuration and runtime interoperability"
+  ],
+  "raw_artifacts_included": false,
+  "source_hashes": {
+    "cn.ninebot.capture.CodeType.java": "cca6e98ae29592a84a3cef3d9b1727e7a52541bf951bfffa71384810b7ddf603",
+    "cn.ninebot.capture.VideoConfig.java": "08942bee9b6f7f6931391b64af781d97c16cea3ae6fa05a568cf54b881ed056b",
+    "cn.ninebot.device.motor.navi.DashNaviDataMessenger$Companion$start$2.java": "50f8aec7e3eb51814dc05feeb0f41fe0e9dbdaf29155a16895c6df988b363867",
+    "cn.ninebot.device.motor.navi.DashNaviDataMessenger$Companion$startScreenCast$2.java": "ad41ff13d109e59110fae05150d12f98c8377c256b07ccc693745be89fe5a474",
+    "cn.ninebot.device.motor.navi.DashNaviDataMessenger.java": "4159e475840712a0198d491b3c256ca8ac2f4c4803bbeff34a8d05976e755a93",
+    "cn.ninebot.device.motor.navi.ScreenCastHelper.java": "ff0a01964a6109aee2db68f247532a4372276525bdcff7c95406ecad699d4842",
+    "cn.ninebot.device.motor.navi.ScreenCastHelperKt.java": "82fe3fbeb14d3a078996f1abc4955e2f4d7582319431632cadae1f1cb07e0856",
+    "cn.ninebot.device.motor.navi.ScreenCastType.java": "a62ba7a5b6f12c9726f0624482b563c04bf62b05ceafd1a7c7f6d25ac3e0af99",
+    "cn.ninebot.library.nbbluetooth.blesdk.BleSdkClient.java": "d24e41df19dcff0f8dc88b8f5de7f44f24d5370948187515403d000506860ae4",
+    "cn.ninebot.library.nbbluetooth.file.BtFileReader.java": "341fe213c9e657c524bd3d9b5353fe198233e84d3b0da5b5ef69f80f78990cbf",
+    "cn.ninebot.library.nbbluetooth.NbBluetoothDevice.java": "ef1009702d8c39b294c7d2447d113123f7c39e2d1181bebcfe35e97ed9cb02fb",
+    "cn.ninebot.library.screencast.BluetoothRtpSender.java": "b839a1eaf95236e924941ce6b85dc4c47ee7162f0509e42859f4ec06e77211f0",
+    "cn.ninebot.library.screencast.ByteUtil.java": "1e09c3619f7061a69450e05325d0fcd1d6d2ee22e8be9fd769a5bf11f056297c",
+    "cn.ninebot.library.screencast.FrameSender.java": "ef9bb87c8315a802ca77607671ac74a8288d3217e541a51700037b3cdce0efdd",
+    "cn.ninebot.library.screencast.RtpSender.java": "00d98ef626435d91abaee9e13a14b116bf67abf71c38dbd9d9f51f63ae3db9fc",
+    "cn.ninebot.mapcapture.DeviceScreenCastManagerKt.java": "230eb4f7fe2b7127008faca591165ca5ea77645991d24d68f9d92f69b52e6c93",
+    "cn.ninebot.mapcapture.DeviceScreenCastRequest.java": "e4b10ee38712b7cb20682743f64675ce82bcf5cf69f5095e61f97a3de0e9793b",
+    "cn.ninebot.mapcapture.NBBleSender.java": "67d35be51987dbaeaa1cad1451ef342042d12be47b0b327d592a927965fb099e",
+    "cn.ninebot.mapcapture.NBBluetoothRtpSender.java": "db5e0155ef884bd14d636a7331311a213a66314f6fc54be1eabaae3b30e57b23",
+    "cn.ninebot.mapcapture.NBWifiClient.java": "e2d9c6692cb6ec81b41a30b2086483d3230ccc2e560e06e29bd986fe77ab0938",
+    "cn.ninebot.mapcapture.NBWifiClientKt.java": "ca15448164cd0392ed39ca6bbfad2e827a3a70a351a73beddab23737291a52ed",
+    "cn.ninebot.mapcapture.ScreenCastDataSender.java": "e4585cd0fbf0ee3055d1408dd07ee4c1d38bcf28c3bbb0c22a05351203b238f6",
+    "cn.ninebot.screencast.CommunicateChannel.java": "adea645f0342c418f690e8c8288295a21e443cf4f35ea3244e73c79c09e4acb6",
+    "cn.ninebot.screencast.ScreenCastConfig.java": "02e96bf71776f04485e988370c2e6ba3ce8100053e2c9de7a5ea2af8a6c867a1",
+    "cn.ninebot.screencast.ScreenCastConfigKt.java": "30c911f0f08b4ee5414ee1bb689f62983c852624159214eb3cc1276475f4f840",
+    "cn.ninebot.screencast.ScreenCastDataSender.java": "afd66b55f124c43f3d4b70f34e494be537c0064ecb5ce6e09fe53748b5762dee",
+    "cn.ninebot.screencast.ScreenCastRequest.fallback.java": "f5643c7b3b396058a273ccfd456b453773e874abf04f572d4fadbe29f0205413",
+    "cn.ninebot.screencast.ScreenCastRequest.java": "8d0cf70ab31f583ddef7b36cc04f8adbaf867fe941bd8c9997597e9b013fa13c",
+    "jlibrtp.BaseRtcpSession.java": "dae1e2b9ff31cc3316646a7c3f5c44f95f2b65726b728ee7fe07c5427f28fc90",
+    "jlibrtp.BaseRtpSession.java": "e4262df15a4f697620021c35cf2c1680cbc025b6254764cac4504b9c7aa29c68",
+    "jlibrtp.ble.BleRTCPSenderThread.java": "6ab97902af091fc25647a77e6865bd14992ce17eb7297f7860b901c05ecde347",
+    "jlibrtp.ble.BleRTCPSession.java": "f8fb32dcd7838e75fe68c66300bf0be5766717502f02a8e51db148ef9b6ab9d3",
+    "jlibrtp.ble.BleRtpPkt.java": "79704bab20b6ba21d12ea9a585ac4a1294af1abddacfbba03e16742d07961948",
+    "jlibrtp.ble.BleRTPSession.java": "e51a5a8c429d8e94f8801687c4ab979a21bb525f67d1d6332bb5c8654decbe9d",
+    "jlibrtp.kcp.Ukcp.java": "007690677001b91b1bf8d5f9906e9bd616d155ebecd2094ebb33bb25b15fef0f",
+    "jlibrtp.RtcpPkt.java": "31e3937dcf6f49de5fd254c08a9097283d47f5a00208757b587eea424a570430",
+    "jlibrtp.RtcpPktAPP.java": "ed5dc51b2c962bf04edf3f8900136a3b4684bb46e5044618aba05eddfd923c73",
+    "jlibrtp.RTCPSenderThread.java": "167780f9bbc46e4b7e25647dd15d6488788f06ac0af78a9fda30d09b6d8a4878",
+    "jlibrtp.RTCPSession.java": "db89fbc710c559b66af1f73fa12f59e741ddd6353493242cb382dc2fc59f01af",
+    "jlibrtp.RtpPkt.java": "15a9a925092dc5a36252606515d0e891bab37c72a14e37e807904ccd83e8be71",
+    "jlibrtp.RtpPktExtension.java": "a6a0e4cb5626634d4ee2ef54902f5f37885ae7f081d3270f3e440d1309b708c2",
+    "jlibrtp.RtpPktHeaderExtension.fallback.java": "88dfd4b30ed3fc6e793384f24a3f1447743b11856ae7ce7f8da8721e3a212520",
+    "jlibrtp.RtpPktHeaderExtension.java": "f67852878366501dffe2e575eaf6aeed38d2c78db7ef935aebc33840ae9ffbdd",
+    "jlibrtp.RTPSession.java": "9e3aff32315a65251a932053dcfb9b04c62b9366258d53564eeb5a8e5f80b415",
+    "jlibrtp.StaticProcs.java": "bddab23116b08beaf0ef8420f2d3a7c57d4dad869a670811aab6dc106dbe6e99"
+  },
+  "publication_note": "九号研究公开整理版：仅包含配置/字段摘要、哈希及离线向量；未附官方 APK、库、反编译原件、原始抓包、账号或车辆凭据。"
+}

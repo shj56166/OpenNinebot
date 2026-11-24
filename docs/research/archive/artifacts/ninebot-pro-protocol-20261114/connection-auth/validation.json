@@ -1,0 +1,7 @@
+{
+  "passed": 34,
+  "failed": 0,
+  "origin": "APK converted JVM methods",
+  "scope": "Original x32 constructor/matcher; hd1.d and hd1.a; d02 constructors, parser, preset and stored transport. Android group/device value stubs; o10, error helper fe and a02/b02/c02 enum values stubbed; hd1 constructor bypassed. No Android network operations executed.",
+  "conversion_limit": "dex2jar c02 initializer attempts to instantiate java.lang.Enum; only enum value holders replaced. JVM verification disabled because converted control classes lack stack maps. These tests cover isolated method behavior, not original Android execution."
+}

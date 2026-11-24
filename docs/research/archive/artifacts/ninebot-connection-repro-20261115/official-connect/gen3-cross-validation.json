@@ -1,0 +1,289 @@
+{
+  "status": "passed",
+  "ELF_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+  "cases_passed": 33,
+  "scope": "Unchanged ARM64 branch segments. Rendering, storage return values, logging and drops are hooks. No cloud, GATT, cipher, actual keyring durability or whole authentication state machine executed.",
+  "cases": [
+    {
+      "case": "native_protocol_formatter",
+      "discriminant": 0,
+      "debug_name": "V1_0"
+    },
+    {
+      "case": "native_protocol_formatter",
+      "discriminant": 1,
+      "debug_name": "V2_2"
+    },
+    {
+      "case": "native_protocol_formatter",
+      "discriminant": 2,
+      "debug_name": "V2_0"
+    },
+    {
+      "case": "native_protocol_formatter",
+      "discriminant": 3,
+      "debug_name": "V2_3"
+    },
+    {
+      "case": "native_protocol_formatter",
+      "discriminant": 4,
+      "debug_name": "V3_2"
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 0,
+      "store_error_hook": false,
+      "delete_error_hook": false,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 0,
+      "store_error_hook": false,
+      "delete_error_hook": true,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 0,
+      "store_error_hook": true,
+      "delete_error_hook": false,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 0,
+      "store_error_hook": true,
+      "delete_error_hook": true,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 1,
+      "store_error_hook": false,
+      "delete_error_hook": false,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 1,
+      "store_error_hook": false,
+      "delete_error_hook": true,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 1,
+      "store_error_hook": true,
+      "delete_error_hook": false,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 1,
+      "store_error_hook": true,
+      "delete_error_hook": true,
+      "observed_calls": [],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 2,
+      "store_error_hook": false,
+      "delete_error_hook": false,
+      "observed_calls": [
+        {
+          "operation": "store",
+          "flag": 0,
+          "synthetic_text_length": 32
+        },
+        {
+          "operation": "delete",
+          "flag": 1
+        }
+      ],
+      "printed_next_removed": true
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 2,
+      "store_error_hook": false,
+      "delete_error_hook": true,
+      "observed_calls": [
+        {
+          "operation": "store",
+          "flag": 0,
+          "synthetic_text_length": 32
+        },
+        {
+          "operation": "delete",
+          "flag": 1
+        }
+      ],
+      "printed_next_removed": true
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 2,
+      "store_error_hook": true,
+      "delete_error_hook": false,
+      "observed_calls": [
+        {
+          "operation": "store",
+          "flag": 0,
+          "synthetic_text_length": 32
+        }
+      ],
+      "printed_next_removed": false
+    },
+    {
+      "case": "next_promotion",
+      "used_key_type": 2,
+      "store_error_hook": true,
+      "delete_error_hook": true,
+      "observed_calls": [
+        {
+          "operation": "store",
+          "flag": 0,
+          "synthetic_text_length": 32
+        }
+      ],
+      "printed_next_removed": false
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 1,
+      "cur_tried": 0,
+      "next_tried": 0,
+      "boundary": "key_invalid_other_branch"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 1,
+      "cur_tried": 0,
+      "next_tried": 1,
+      "boundary": "key_invalid_other_branch"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 1,
+      "cur_tried": 1,
+      "next_tried": 0,
+      "boundary": "key_invalid_other_branch"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 1,
+      "cur_tried": 1,
+      "next_tried": 1,
+      "boundary": "both_tried_need_authentication"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 2,
+      "cur_tried": 0,
+      "next_tried": 0,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 2,
+      "cur_tried": 0,
+      "next_tried": 1,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 2,
+      "cur_tried": 1,
+      "next_tried": 0,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 2,
+      "used_key_type": 2,
+      "cur_tried": 1,
+      "next_tried": 1,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 1,
+      "cur_tried": 0,
+      "next_tried": 0,
+      "boundary": "key_invalid_other_branch"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 1,
+      "cur_tried": 0,
+      "next_tried": 1,
+      "boundary": "key_invalid_other_branch"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 1,
+      "cur_tried": 1,
+      "next_tried": 0,
+      "boundary": "key_invalid_other_branch"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 1,
+      "cur_tried": 1,
+      "next_tried": 1,
+      "boundary": "both_tried_need_authentication"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 2,
+      "cur_tried": 0,
+      "next_tried": 0,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 2,
+      "cur_tried": 0,
+      "next_tried": 1,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 2,
+      "cur_tried": 1,
+      "next_tried": 0,
+      "boundary": "try_read_cur"
+    },
+    {
+      "case": "expired_invalid_fallback_gate",
+      "status": 4,
+      "used_key_type": 2,
+      "cur_tried": 1,
+      "next_tried": 1,
+      "boundary": "try_read_cur"
+    }
+  ]
+}

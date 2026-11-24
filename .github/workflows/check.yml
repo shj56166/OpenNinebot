@@ -1,0 +1,23 @@
+name: Check standalone sources
+on: [push, pull_request]
+jobs:
+  java-and-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/audit-source.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - run: sdkmanager "platforms;android-36" "ndk;28.2.13676358"
+      - uses: actions/cache@v4
+        with:
+          path: .deps
+          key: native-linux-${{ hashFiles('scripts/prepare-native.py', 'scripts/prepare-codecs.py', 'scripts/cast-codecs.lock.json') }}
+      - run: python3 scripts/prepare-native.py
+      - run: python3 scripts/prepare-codecs.py --ndk "$ANDROID_HOME/ndk/28.2.13676358"
+      - run: chmod +x gradlew
+      - run: ./gradlew --max-workers=2 :app:testDebugUnitTest :ninebot-java:test :probe:testDebugUnitTest :app:lintDebug :app:assembleDebug
+      - run: cmake -S modules/ninebot-cast-android/src/test/cpp -B .native-tests -G Ninja && cmake --build .native-tests -j2 && ctest --test-dir .native-tests --output-on-failure

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "synthetic HCI only; no actual phone, vehicle, cloud, or identity inference",
+  "unittest_cases": 18,
+  "original_unittest_cases": 6,
+  "new_advertising_event_boundary_cases": 12,
+  "official_synthetic_AD_vectors_inside_suite": 5,
+  "sources": [
+    {
+      "path": "tools/ninebot-ble-test/scripts/analyze-hci.py",
+      "sha256": "099a168ec8a188a80dc8fb5ed6c47c55e95f3796bf2e7edfedb3c7a29bdaded6"
+    },
+    {
+      "path": "tools/ninebot-ble-test/scripts/test_analyze_hci.py",
+      "sha256": "e3aff699b972a640f9747d989f011786c0d3967992f7ef67602ce5eb9f48fcdf"
+    }
+  ]
+}

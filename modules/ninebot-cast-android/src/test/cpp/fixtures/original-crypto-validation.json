@@ -1,0 +1,590 @@
+{
+  "status": "passed",
+  "ELF": "artifacts/ninebot-ble-cast-20261115/raw/native/libnbcrypto.so",
+  "ELF_sha256": "21e594e8d8dedeb5cc04942a763cab7b88f4686980bcc543be9cf3cf344b9ca2",
+  "entry": "_Z10nb_encryptP14crypto_param_tPhhS1_ at 0x69f80",
+  "scope": "original ARM64 Encryption2 encryption vs independent Python AES literals; libc/TLS hooks only; not JNI/radio/vehicle",
+  "cases_passed": 58,
+  "cases": [
+    {
+      "fixture": "precomm-request-04",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "2c2119f9311b4a6e2bf9504caea4ecb1dd2268871d532b281d72a64ee5cbc2ef",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-response-04",
+      "null_key2": false,
+      "wire_bytes": 43,
+      "wire_sha256": "52fd6e6ef1397ff6ce1ea41f03428a2f187f16f562dd2cbdbc46d4d8422e9bbb",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "auth-request-04",
+      "null_key2": false,
+      "wire_bytes": 27,
+      "wire_sha256": "b630f0c62f5c4b9b839ece0343948ff4847c6dcb18b89b7db2ad57f9fa0d23ca",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "auth-response-04",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "feebceb54c7f16c0efb93e485a7b256d0cc0c45a9ac95804802a1d6bbb347d41",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-request-09",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "69645115ecdb2b0cac16594ac7f2125180dd7e04f73c582d67509f5de865a5d5",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-response-09",
+      "null_key2": false,
+      "wire_bytes": 43,
+      "wire_sha256": "eeecc812e973cec7a69b2e6eb91792a37bfc0c4d416df8f34f7a6d8f5db375db",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "auth-request-09",
+      "null_key2": false,
+      "wire_bytes": 27,
+      "wire_sha256": "ed23f121d26a2c970d05bcd12ca3cf65546475a4cc7fb578c03a8ae5034f8403",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "auth-response-09",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "c6ee1033a843681f2717c4cd068335be25dd4aa876bb23da593368f863447793",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-unpaired",
+      "null_key2": false,
+      "wire_bytes": 43,
+      "wire_sha256": "6701f8358ff6c60726938c1909ec08c65a179ae44f3c4bd65aeb35ef72cadeb2",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "auth-rejected",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "783471edd5ea80c10c756bb343217b8930c668e2847ec1472d222e812d89c371",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "read-request",
+      "null_key2": false,
+      "wire_bytes": 14,
+      "wire_sha256": "9a03ca7c91e286ffd8809af9b0a7a27489ce2ceab6924745ac4c8e8c896ca380",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "read-response",
+      "null_key2": false,
+      "wire_bytes": 15,
+      "wire_sha256": "412d9f68f3031557bee9157f7a284288c0942edb6396658dfbcaa5756706fc74",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "read-wrong-register",
+      "null_key2": false,
+      "wire_bytes": 15,
+      "wire_sha256": "a4948a0caba15167c3756f9494bc778968d289e81f3a22f86300e7e18d929db9",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "read-replay",
+      "null_key2": false,
+      "wire_bytes": 15,
+      "wire_sha256": "9d61705d454e1c0d076d616c0615076b74f948aa0f6b058799469feeb08f8689",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "read-bootstrap-downgrade",
+      "null_key2": false,
+      "wire_bytes": 15,
+      "wire_sha256": "a4410821bdebcde8e9f46f706e1048349e18eb5b812f6a8c62473c27364e1252",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-begin-request",
+      "null_key2": false,
+      "wire_bytes": 16,
+      "wire_sha256": "27c9531cd1f44fb18f39e5f21ba26f08c0e57a67afdc9dd12768dda7f10e971a",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-begin-response",
+      "null_key2": false,
+      "wire_bytes": 17,
+      "wire_sha256": "7f799177db991abda60b71fe08a6fcca52c230e21bfebd944e79688ed295b074",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-group-0-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "2535933d75fabb07022117ef3650849ff0d81098ba4e8ac2aeae51a66255df7b",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-group-0-part-0",
+      "null_key2": false,
+      "wire_bytes": 41,
+      "wire_sha256": "32692867b27cc13ea7ff33f2059810d840b00ccec675e4732da14c05960111a8",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-verify-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "64d77999655ab1a5653205ddf6d45a63f86533f94a1517ad807e824488242ab0",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-verify-response",
+      "null_key2": false,
+      "wire_bytes": 29,
+      "wire_sha256": "44d57df4193bda17c2f400956639b2d29ab631e92e1e31f3a66b2ee189fa915e",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-small-wrong-md5",
+      "null_key2": false,
+      "wire_bytes": 29,
+      "wire_sha256": "f8e0bf2dd9787fb40e10e3fd20ea54744f29479db191fb923da7ef65889e25d8",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-begin-request",
+      "null_key2": false,
+      "wire_bytes": 16,
+      "wire_sha256": "27c9531cd1f44fb18f39e5f21ba26f08c0e57a67afdc9dd12768dda7f10e971a",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-begin-response",
+      "null_key2": false,
+      "wire_bytes": 17,
+      "wire_sha256": "789d51357fb12f73c55b31e6d94a240055f3169ff100eddef864e90c826eac07",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "2535933d75fabb07022117ef3650849ff0d81098ba4e8ac2aeae51a66255df7b",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-0",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "48d4f5b3d6c0b1a78b451ab2aa74b62c5e8e3edcd9dd139f48016e7693d97f5d",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-1",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "b36eeb15b74d22d0dc721b74fc84ef6d3a05e66e5e72d25bd82707507c027e35",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-2",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "5990a8f1f9b7bfcd0b2c27273d1ee28025979083ca1679733ac41557885411c0",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-3",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "f9bb03499fccd570cc60f54592a06b3d104d7056fa1c699a2f7910826ddc44c1",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-4",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "fd8917eaa27aee11b8a45a16cee133f4065a463b9582b28ca5d7dc56c5979b05",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-5",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "26439cfbbc5eba68f5698b930b915c956be4ed32d5e93e078f90e4d315a75559",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-6",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "cfdf8a2f2cf2decf39f6321bafe85248dfcf221c292e826acd032834abd7d571",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-0-part-7",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "eda8e3d60629252dd59b9e1c5475f4dc5f212b38a1927add5e5d78ca19ad15a7",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-1-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "3a2a4f6774b1ecbf75f2840bb87817a74ad6f76b6d83442f3f0de654be8df031",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-group-1-part-0",
+      "null_key2": false,
+      "wire_bytes": 104,
+      "wire_sha256": "696cf31863a9e42c752ff2f563e22952f30caa481a4c2b49d572bf60942707e4",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-verify-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "eaf69ca33e4a9e199cbf6fef5338e6830f722c003b66cb900f18302b51b3b4e4",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-verify-response",
+      "null_key2": false,
+      "wire_bytes": 29,
+      "wire_sha256": "da6b576b0d538e422f6bbcc9dc2a2f0c9dd4cafd64eca5fd6d2cc55208751def",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-long-wrong-md5",
+      "null_key2": false,
+      "wire_bytes": 29,
+      "wire_sha256": "0f9ec9d4818c80bf4f391b590a49d75836d8d21e3b849c2cc0703452ba17dfab",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-begin-request",
+      "null_key2": false,
+      "wire_bytes": 16,
+      "wire_sha256": "27c9531cd1f44fb18f39e5f21ba26f08c0e57a67afdc9dd12768dda7f10e971a",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-begin-response",
+      "null_key2": false,
+      "wire_bytes": 17,
+      "wire_sha256": "325b58d730a80641c532091396a980aa921f0f6dfb8c5372305b690d6011c2cb",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-group-0-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "2535933d75fabb07022117ef3650849ff0d81098ba4e8ac2aeae51a66255df7b",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-group-0-part-0",
+      "null_key2": false,
+      "wire_bytes": 77,
+      "wire_sha256": "b5614142f4148fa667174fbb115aadec45317378a8840b68b7e9756781ff62be",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-group-0-part-1",
+      "null_key2": false,
+      "wire_bytes": 78,
+      "wire_sha256": "b265a9b57e78613fdb5d61ad031e72696135cbe2cca7a1291e5189c28defb851",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-verify-request",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "64d77999655ab1a5653205ddf6d45a63f86533f94a1517ad807e824488242ab0",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-verify-response",
+      "null_key2": false,
+      "wire_bytes": 29,
+      "wire_sha256": "002633264319f38f393110906fa62c19069d7796b675c224ea0abe5082203028",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-wrong-md5",
+      "null_key2": false,
+      "wire_bytes": 29,
+      "wire_sha256": "5bf522fdc26301829411e95d70344c75887a96dfba5e720f07a3a76b9bef5fea",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-short-final",
+      "null_key2": false,
+      "wire_bytes": 77,
+      "wire_sha256": "d15baca5300721e40ae5ccaa48ac39bbe951b32c48c1ce68396a5709bb0193ab",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-variable-padded-final",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "55098199cda2c576d2bc93130867c2de177bfb7b94b6909a8c77928e6738f38b",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-oversize",
+      "null_key2": false,
+      "wire_bytes": 17,
+      "wire_sha256": "c2f56bcfb72fb898367d925ce0fe338e147f056fd1f3abc2361a6c9e1074ed9d",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "config-wrong-first-index",
+      "null_key2": false,
+      "wire_bytes": 141,
+      "wire_sha256": "9d65e2a6fe0f94c4c8d06f2d4956675bde683e4b999af35ec167bda54e966226",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "mode-map-request",
+      "null_key2": false,
+      "wire_bytes": 14,
+      "wire_sha256": "e42609381fe9a716ea3d46e940df1c25d64582e6d502bbba33a636e2bdfe9736",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "mode-map-response",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "08dd2cabb58cbf79e5263e2183d42c938d8e3e12e555bab699f859534af6981a",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "mode-wrong-target",
+      "null_key2": false,
+      "wire_bytes": 13,
+      "wire_sha256": "234ac4d2cb2e1bea2f61ed8143fec5e64a2f8e745f8f87c00031cfe11865bee6",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-request-04",
+      "null_key2": true,
+      "wire_bytes": 13,
+      "wire_sha256": "2c2119f9311b4a6e2bf9504caea4ecb1dd2268871d532b281d72a64ee5cbc2ef",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-response-04",
+      "null_key2": true,
+      "wire_bytes": 43,
+      "wire_sha256": "52fd6e6ef1397ff6ce1ea41f03428a2f187f16f562dd2cbdbc46d4d8422e9bbb",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-request-09",
+      "null_key2": true,
+      "wire_bytes": 13,
+      "wire_sha256": "69645115ecdb2b0cac16594ac7f2125180dd7e04f73c582d67509f5de865a5d5",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-response-09",
+      "null_key2": true,
+      "wire_bytes": 43,
+      "wire_sha256": "eeecc812e973cec7a69b2e6eb91792a37bfc0c4d416df8f34f7a6d8f5db375db",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    },
+    {
+      "fixture": "precomm-unpaired",
+      "null_key2": true,
+      "wire_bytes": 43,
+      "wire_sha256": "6701f8358ff6c60726938c1909ec08c65a179ae44f3c4bd65aeb35ef72cadeb2",
+      "libc_imports": [
+        "__memcpy_chk",
+        "memcpy"
+      ]
+    }
+  ]
+}

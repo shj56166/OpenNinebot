@@ -1,0 +1,410 @@
+{
+  "status": "passed",
+  "library_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+  "entry": "0x2eccd8",
+  "captured_writer": "0x5cdaf0",
+  "cases_passed": 14,
+  "engine": "Unicorn 2.1.4 executes unchanged ARM64 instructions",
+  "hooks": {
+    "0x2ed394": "GATT characteristic lookup returns selected Ready or Pending state",
+    "0x325a60": "Environment config clone, no media access",
+    "0x5cdaf0": "Capture original arguments, stop before downstream execution"
+  },
+  "scope": "Original 0x2eccd8 forwarding only; downstream JNI/GATT and radio are not executed",
+  "cases": [
+    {
+      "input_bytes": 0,
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 0,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 1,
+      "input_sha256": "9e076ceaf246b6003d9c2680a2b4cf0bffd069805902b0b5edeebf49039fe4bd",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 1,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 19,
+      "input_sha256": "f5d8121d3b6c7037693597bbf162d99276aaa8212c4b8345f945b84d16df43bd",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 19,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 20,
+      "input_sha256": "d586ecff746c705d2a0d3e1aed1908ae7f64047576b2bc14b5403f592aee3f69",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 20,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 21,
+      "input_sha256": "2edb628a5d2435302444e7dbf71bb50f62a4bb3bb54569a41864d41975be3538",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 21,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 64,
+      "input_sha256": "5e07f7a828fdd327fc1f6bfeba2455ae455121d58002824641a5d8f5447bd0c9",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 64,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 128,
+      "input_sha256": "1e22b24a64e5ddc141177d76799f3c7aa54987beb43730daa3cffa5ad31dd16b",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 128,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 220,
+      "input_sha256": "e88c0bb7c93d3fbcd5d09211b7d3926f3f96a81adbf5d20fead610c927ca428b",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 220,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 240,
+      "input_sha256": "0b79cbde806de8960c71caf6912860333758685cb0ff565734c7b5231c6cc9dc",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 240,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 244,
+      "input_sha256": "f20fd82e26403fc1cfbce1a701868cd06db009a1312b61ff3566e7717d6217de",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 244,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 512,
+      "input_sha256": "f8164f512857ab089ae02dff2a8ce52516482ab1422acbdaf66bdf92bc2c5bcd",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 512,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 1024,
+      "input_sha256": "23dead5212d9b9bbdde335c682bec3a7553ea0565c4855b7dd26e329995fd402",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 1024,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 4096,
+      "input_sha256": "8103efd72121c128c0be5b4219aa6715c780fa7dea2d4c709c1507ef803be16b",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 4096,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": null,
+      "executed_instructions": 56,
+      "executed_address_trace_sha256": "2fa3e851f7a972d6a47f7464ed250b383deba336d3e45e0a92f0504732a5d9db"
+    },
+    {
+      "input_bytes": 24,
+      "input_sha256": "a1219b82fbc6fc08d44fcf6db4d127df4372fe7cf07347651e1c56fbea15975f",
+      "writer": {
+        "pointer_unchanged": true,
+        "length": 24,
+        "payload_unchanged": true,
+        "characteristic_handle": 268455936,
+        "write_type_discriminant": 1
+      },
+      "lookup": [
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        },
+        {
+          "service": "6e400001-0000-0000-006e-696e65626f74",
+          "characteristic": "6e400002-0000-0000-006e-696e65626f74"
+        }
+      ],
+      "input_writes": [],
+      "pending_resume": {
+        "result_is_pending": true,
+        "state_is_3": true,
+        "writer_not_called": true
+      },
+      "executed_instructions": 90,
+      "executed_address_trace_sha256": "fe6a9fd5599896e01680b7c59665a85835ab4952155021b6bc1515279944cd87"
+    }
+  ],
+  "initializer_cases_passed": 7,
+  "handler_initializer": {
+    "begin": "0x328b70",
+    "end_exclusive": "0x328ba8",
+    "scope": "Original basic block only; does not prove handler use in Java RTP route",
+    "cases": [
+      {
+        "constructor_parameter": 0,
+        "fields": {
+          "payload_size": 0,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      },
+      {
+        "constructor_parameter": 244,
+        "fields": {
+          "payload_size": 244,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      },
+      {
+        "constructor_parameter": 247,
+        "fields": {
+          "payload_size": 247,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      },
+      {
+        "constructor_parameter": 512,
+        "fields": {
+          "payload_size": 512,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      },
+      {
+        "constructor_parameter": 65535,
+        "fields": {
+          "payload_size": 65535,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      },
+      {
+        "constructor_parameter": 65536,
+        "fields": {
+          "payload_size": 0,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      },
+      {
+        "constructor_parameter": 65537,
+        "fields": {
+          "payload_size": 1,
+          "rtp_header_size": 12,
+          "rtp_specific_header_size": 8,
+          "index": 0,
+          "ssrc": 0,
+          "payload_type": 32,
+          "rtp_standard": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "research_date": "2026-10-10",
+  "scope": "Offline static analysis only; no APK execution, vehicle connection, or cloud request",
+  "tool": {
+    "repository": "https://github.com/morluto/rea",
+    "revision": "3edb2172def0e0bd9076f23148f0c41cd2f341a3",
+    "version": "6.2.0",
+    "android_provider": "JADX headless 0.7.1",
+    "android_provider_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75"
+  },
+  "apk": {
+    "package": "cn.ninebot.ninebot",
+    "version": "6.10.11",
+    "sha256": "02ecd91b74e00df76cfe00eda4c4a9a5bc332231562a171e48d64f45bd418705"
+  },
+  "v3_java_flow": {
+    "response_fields": [
+      "deviceEnc",
+      "appEnc",
+      "efTimestamp",
+      "exTime",
+      "reTime",
+      "nonce",
+      "aad"
+    ],
+    "helper": "V3SessionKeyHelper.saveV3SessionKeyDataAndUpdateSdkKey maps response fields into BleKeyStatusManager.saveKeyInfo",
+    "persisted_copy": "saveKeyInfo removes appEnc before serializing its SharedPreferences map",
+    "native_update": {
+      "method": "updateSecret",
+      "params": {
+        "encrypt_protocol_version": 3,
+        "session_key_hex": "appEnc value",
+        "sn": "device serial number"
+      }
+    },
+    "clear": "clearKeyInfo removes the per-SN entry and sends updateSecret with an empty session_key_hex",
+    "rea_evidence_ids": [
+      "ev_ed830460c4adc933cdd535b2dd82b8946e7cce9db3c56adceff3881c0102413a",
+      "ev_32a7889da2d0cb442803774c54a293352b3d8223170649c945e71f60b0681244",
+      "ev_398b8c38ef31c7fd5b520e027366d3bf5d7ca0907b57b20ff026e4bed7a2bf67",
+      "ev_52f74bd42a96d420e10a0a8ff8298cd446ae8b56bdb947ce57d9d8e6d1edc616"
+    ]
+  },
+  "v3_processor": {
+    "prepare": "Registers the SDK connection callback and stores the prepare timeout",
+    "on_process": {
+      "id_1": "Notifies prepare listeners that user interaction is pending",
+      "id_5": "Notifies prepare listeners that interaction succeeded",
+      "id_6": "Parses the callback message as a map and passes it to saveKeyInfo"
+    },
+    "on_success": "Sets SDK state to CONNECTED and schedules timeout/read-version work",
+    "native_callback_id_semantics": "Incomplete; Java switch branches do not recover the native protocol state machine",
+    "rea_evidence_ids": [
+      "ev_406c46f457aed827dcd8303286136012c65a2f6b591c2e3e55eb887bf30dc9d4",
+      "ev_e2412fc3b7924e3d7389820435deed197322d72408b6b8d90fe6a93b8628ec16",
+      "ev_698236354e1f83cf80be103ce5e0b3c437e19bc15546bc1eded5b2bbcdf2359b"
+    ]
+  },
+  "native_keyring_followup": {
+    "binary_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+    "confirmed": [
+      "V3 SecretInfo path requires SN and session_key_hex",
+      "Input check accepts 32 ASCII hex characters",
+      "A helper return is passed onward with explicit length 0x20",
+      "Credential dispatch uses indirect vtable slots at +0x20 and +0x48",
+      "One credential path uses service com.ninebot.blelibrary"
+    ],
+    "unproven": [
+      "32-character text is decoded to 16 bytes",
+      "The resulting bytes are the final AES key",
+      "SN is the keyring account or alias",
+      "The runtime vtable target and final BLE consumer"
+    ],
+    "raw_evidence_label": "keyring/findings.md (not included)"
+  },
+  "ble_rtp_native_followup": {
+    "binary_sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188",
+    "java_to_jni": "BleSdkClient checks nonempty data and connected MAC, then passes the same byte[] to RustBridge.writeRtpData",
+    "jni": "Copies bytes into Rust-owned storage and schedules an asynchronous future on LocalPool",
+    "rtp_handler_debug_fields": {
+      "payload_size": "0x00",
+      "rtp_header_size": "0x08",
+      "rtp_specific_header_size": "0x10",
+      "index": "0x18",
+      "ssrc": "0x1c",
+      "payload_type": "0x20",
+      "rtp_standard": "0x21"
+    },
+    "unproven": [
+      "Concrete async future poll target",
+      "RTP header removal, rewrite, or index insertion",
+      "Media encryption behavior",
+      "Constructor and consumers of RtpHandler"
+    ],
+    "rea_evidence_ids": [
+      "ev_6c6a3cfff31c41252e98cf83552e97908ff8fd3a001c9e693fbfb4bcbe1462fb",
+      "ev_1fb2c13d1a4fd4c03e769d46a74f59a6322986bc51d9883a5738e58507bb08c1"
+    ],
+    "raw_evidence_label": "rtp/findings.md (not included)"
+  },
+  "coverage_limitations": [
+    "REA's Windows JADX provider analyzes DEX but does not disassemble the ARM64 ELF native library",
+    "Native findings are focused offline disassembly; indirect dispatch and downstream consumers remain unresolved",
+    "No 2025-or-later vehicle was available for compatibility validation"
+  ],
+  "publication_note": "九号研究公开整理版：仅包含配置/字段摘要、哈希及离线向量；未附官方 APK、库、反编译原件、原始抓包、账号或车辆凭据。"
+}

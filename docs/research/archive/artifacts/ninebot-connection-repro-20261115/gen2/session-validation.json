@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "original_arm64_encryption_cases": 58,
+  "junit_tests": 27,
+  "sources": [
+    {
+      "path": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotEncryption2Codec.java",
+      "sha256": "ad048a761d81df1ccb4b306ab0dbb787c3ca17bc15f379627ec30219f03579a5"
+    },
+    {
+      "path": "modules/ninebot-java/src/main/java/org/openninebot/reference/app/NinebotVehicleProfile.java",
+      "sha256": "b2cbf4c3c5fbb51adfdb361a552aad0ebdf201ad7e23c6ff19ad6e1aaa9f3ff3"
+    },
+    {
+      "path": "tools/ninebot-ble-test/app/src/main/java/com/motexa/ninebotbletest/NinebotProbeSession.java",
+      "sha256": "01bc6f2fcd86ee3ee738b699990b83268a2a89a0c958ab883ac471cc8da3358b"
+    },
+    {
+      "path": "tools/ninebot-ble-test/app/src/test/java/com/motexa/ninebotbletest/NinebotProbeSessionTest.java",
+      "sha256": "90c558fd1d86dfd506a5f6ee9819b5bdcae8b3ed95f8e186d939b60f53d7e40c"
+    }
+  ],
+  "scope": "synthetic only; no phone, account, radio, vehicle, or actual credential",
+  "independent_python_wire_vectors": 53
+}

@@ -1,0 +1,123 @@
+{
+  "model": 14360,
+  "name": "九号电动Mz",
+  "hardwareId": 4360,
+  "configurationVersion": 600015500,
+  "bleProtocol": 2,
+  "staticConfigEncrypt": 2,
+  "observedAuthenticationGeneration": null,
+  "modelMtuSupport": true,
+  "verifyMtuConditionPresent": false,
+  "rootExtractionGap": {
+    "explicitFileCollectorIncludedVerify": false,
+    "cachedVerifyModels": [
+      14101,
+      14357
+    ]
+  },
+  "readCommands": [
+    {
+      "name": "rMainPower",
+      "module": "ecu",
+      "target": 9,
+      "responseSource": 9,
+      "cmd": 1,
+      "responseCmd": 4,
+      "index": 3,
+      "dataHex": "02",
+      "responseBytes": 2
+    },
+    {
+      "name": "rBool",
+      "module": "dis",
+      "target": 1,
+      "responseSource": 1,
+      "cmd": 1,
+      "responseCmd": 4,
+      "index": 178,
+      "dataHex": "02",
+      "responseBytes": 2
+    },
+    {
+      "name": "rSN",
+      "module": "dis",
+      "target": 1,
+      "responseSource": 1,
+      "cmd": 1,
+      "responseCmd": 4,
+      "index": 16,
+      "dataHex": "0e",
+      "responseBytes": 14
+    },
+    {
+      "name": "rECUPN",
+      "module": "ecu",
+      "target": 9,
+      "responseSource": 9,
+      "cmd": 1,
+      "responseCmd": 4,
+      "index": 40,
+      "dataHex": "0e",
+      "responseBytes": 14
+    },
+    {
+      "name": "rFunAppBool",
+      "module": "dis",
+      "target": 1,
+      "responseSource": 1,
+      "cmd": 1,
+      "responseCmd": 4,
+      "index": 138,
+      "dataHex": "02",
+      "responseBytes": 2
+    },
+    {
+      "name": "rFunAppBool2",
+      "module": "dis",
+      "target": 1,
+      "responseSource": 1,
+      "cmd": 1,
+      "responseCmd": 4,
+      "index": 140,
+      "dataHex": "02",
+      "responseBytes": 2
+    }
+  ],
+  "officialLocalPreparationReads": [
+    "rMainPower",
+    "rBool"
+  ],
+  "officialBusinessQueue": [
+    "rSN",
+    "rBool",
+    "rECUPN",
+    "rFunAppBool",
+    "rFunAppBool2"
+  ],
+  "officialQueueRereadsRBool": true,
+  "powerMask": 4,
+  "activationMask": 2048,
+  "server": {
+    "url": "/app-api/device/bind/is-binding",
+    "method": "post",
+    "cache_enable": true,
+    "success_code": 1,
+    "server_platform": "java_v2",
+    "apply_server_config": false,
+    "params": "{\"uid\":\"$uid\",\"wnumber\":\"$wnumber\",\"vehicle_type\":\"$vehicle_type\",\"ecu_pn\":\"$ecu_pn\"}"
+  },
+  "servers": [
+    {
+      "url": "/app-api/device/mac/update-mac-info",
+      "method": "post",
+      "success_code": 1,
+      "apply_server_config": false,
+      "server_platform": "java_v2",
+      "params": "{\"uid\":\"$uid\",\"wnumber\":\"$wnumber\",\"vehicle_type\":\"$vehicle_type\",\"vehicle_mac\":\"$vehicle_mac\",\"app_0xb2\":\"$app_0xb2_upload\",\"app_0x8a\":\"$app_0x8a_upload\",\"app_0x8c\":\"$app_0x8c_upload\",\"battery_in\":\"$app_battery_in\"}"
+    }
+  ],
+  "cloudBindingCheckIsNativeAuth": false,
+  "physicalAttMtuKnown": false,
+  "vehicleTestPerformed": false,
+  "productionIntegration": "version 28 still rejects model 14360; this research does not change production code"
+}

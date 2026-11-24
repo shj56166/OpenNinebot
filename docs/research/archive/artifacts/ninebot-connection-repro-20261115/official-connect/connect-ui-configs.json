@@ -1,0 +1,101 @@
+{
+  "14101": {
+    "activation": {
+      "command": "rBool",
+      "transform": {
+        "mask": 2048,
+        "parse": "toBoolean, 0, 2, != 0"
+      }
+    },
+    "command_condition": {
+      "allParams$delegate": {
+        "_value": {},
+        "initializer": {}
+      },
+      "debugDisableReason": "",
+      "debugNbFrameIsCache": false,
+      "debugResponseHexMap": {},
+      "debugResponseIsCacheMap": {},
+      "mResultMap": {},
+      "refreshValues$delegate": {
+        "_value": {},
+        "initializer": {}
+      },
+      "reverse": false,
+      "value_strategy": "only_ble_or_key",
+      "values": [
+        {
+          "command": "rMainPower",
+          "refresh": true,
+          "transform": {
+            "mask": 4,
+            "parse": "toBoolean, 0, 2, > 0"
+          }
+        }
+      ]
+    },
+    "mtu_set_condition": null,
+    "queue": [
+      {
+        "commands": [
+          "rSN",
+          "rBool",
+          "rECUPN",
+          "rFunAppBool",
+          "rFunAppBool2"
+        ],
+        "period": 0
+      }
+    ]
+  },
+  "14357": {
+    "activation": {
+      "command": "rBool",
+      "transform": {
+        "mask": 2048,
+        "parse": "toBoolean, 0, 2, != 0"
+      }
+    },
+    "command_condition": {
+      "allParams$delegate": {
+        "_value": {},
+        "initializer": {}
+      },
+      "debugDisableReason": "",
+      "debugNbFrameIsCache": false,
+      "debugResponseHexMap": {},
+      "debugResponseIsCacheMap": {},
+      "mResultMap": {},
+      "refreshValues$delegate": {
+        "_value": {},
+        "initializer": {}
+      },
+      "reverse": false,
+      "value_strategy": "only_ble_or_key",
+      "values": [
+        {
+          "command": "rMainPower",
+          "refresh": true,
+          "transform": {
+            "mask": 4,
+            "parse": "toBoolean, 0, 2, > 0"
+          }
+        }
+      ]
+    },
+    "mtu_set_condition": null,
+    "queue": [
+      {
+        "commands": [
+          "rSN",
+          "rBool",
+          "rECUPN",
+          "rInfoBool2",
+          "rFunAppBool",
+          "rFunAppBool2"
+        ],
+        "period": 0
+      }
+    ]
+  }
+}

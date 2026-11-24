@@ -1,0 +1,54 @@
+plugins { id "com.android.application" }
+def releaseSigning = new Properties()
+def signingFile = rootProject.file(providers.gradleProperty("releaseSigningFile").getOrElse("signing.properties"))
+if (signingFile.exists()) signingFile.withReader("UTF-8") { releaseSigning.load(it) }
+def deps = providers.gradleProperty("castDepsDir").getOrElse(rootProject.file(".deps").absolutePath)
+def publicKey = rootProject.file("config/update-public-key.txt").getText("UTF-8").trim()
+android {
+    namespace "com.motexa.openninebot"
+    compileSdk 36
+    ndkVersion "28.2.13676358"
+    defaultConfig {
+        applicationId "com.motexa.openninebot"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "0.1.0"
+        ndk { abiFilters "arm64-v8a" }
+        externalNativeBuild { ndkBuild { arguments "CAST_DEPS_DIR=${deps}", "-j4" } }
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "LOG_API", '"https://api.motexa.top/ninebot-lab/v1/"'
+        buildConfigField "String", "UPDATE_URL", '"https://github.com/shj56166/OpenNinebot/releases/latest/download/update.json"'
+        buildConfigField "String", "UPDATE_PUBLIC_KEY", '"' + publicKey + '"'
+    }
+    signingConfigs {
+        release {
+            if (releaseSigning.getProperty("storeFile")) {
+                def key = new File(releaseSigning.getProperty("storeFile"))
+                storeFile key.isAbsolute() ? key : new File(signingFile.parentFile, releaseSigning.getProperty("storeFile"))
+                storePassword releaseSigning.getProperty("storePassword")
+                keyAlias releaseSigning.getProperty("keyAlias")
+                keyPassword releaseSigning.getProperty("keyPassword")
+            }
+        }
+    }
+    buildFeatures { buildConfig true }
+    externalNativeBuild { ndkBuild { path file("src/main/cpp/Android.mk") } }
+    buildTypes {
+        debug { }
+        release { signingConfig signingConfigs.release; minifyEnabled true; shrinkResources true; proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro' }
+    }
+    sourceSets {
+        main.java.srcDir rootProject.file("modules/cast-lab-common/src/main/java")
+    }
+    testOptions { unitTests.includeAndroidResources = true }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies {
+    implementation project(":ninebot-cast-android")
+    implementation "androidx.core:core:1.17.0"
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "org.robolectric:robolectric:4.16"
+    testImplementation "androidx.test:core:1.6.1"
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

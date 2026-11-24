@@ -1,0 +1,2626 @@
+{
+  "research_date": "2026-10-09",
+  "vehicle_present": false,
+  "official_app": {
+    "package": "cn.ninebot.ninebot",
+    "version_name": "6.10.11",
+    "version_code": 610114116,
+    "apk_sha256": "02ecd91b74e00df76cfe00eda4c4a9a5bc332231562a171e48d64f45bd418705"
+  },
+  "reference_commits": {
+    "segway-ninebot-ble-app": "d26b181c1d7eda8e11248af53a6a622334746d9a",
+    "segway-ninebot-ble-docs": "015492ef5af260bbfe2c519a44413afbd15687f4"
+  },
+  "runtime_model_count": 131,
+  "runtime_encrypt3_default_count": 0,
+  "selected_official_runtime_models": [
+    {
+      "server_id": 14357,
+      "hardware_id": 4357,
+      "vehicle_category_en": "Ninebot eMoped Mmax2",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        }
+      ]
+    },
+    {
+      "server_id": 10259,
+      "hardware_id": 259,
+      "vehicle_category_en": "eKickScooter F3",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "vcu",
+          "r_id": 22,
+          "s_id": 22
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        }
+      ]
+    },
+    {
+      "server_id": 10257,
+      "hardware_id": 257,
+      "vehicle_category_en": "Segway SuperScooter GT3",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "vcu",
+          "r_id": 22,
+          "s_id": 22
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        }
+      ]
+    },
+    {
+      "server_id": 10258,
+      "hardware_id": 258,
+      "vehicle_category_en": "Segway eKickscooter Ninebot MAX G3 Series",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "vcu",
+          "r_id": 22,
+          "s_id": 22
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        }
+      ]
+    },
+    {
+      "server_id": 14100,
+      "hardware_id": 4100,
+      "vehicle_category_en": "M3 95c MAX",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 32,
+          "s_id": 32
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        },
+        {
+          "name": "e-vis",
+          "r_id": 29,
+          "s_id": 29
+        },
+        {
+          "name": "spl",
+          "r_id": 58,
+          "s_id": 58
+        },
+        {
+          "name": "ex-bt",
+          "r_id": 56,
+          "s_id": 56
+        },
+        {
+          "name": "sfal",
+          "r_id": 57,
+          "s_id": 57
+        },
+        {
+          "name": "vbox",
+          "r_id": 64,
+          "s_id": 64
+        }
+      ]
+    },
+    {
+      "server_id": 14101,
+      "hardware_id": 4101,
+      "vehicle_category_en": "Ninebot eScooter N3",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 32,
+          "s_id": 32
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        }
+      ]
+    },
+    {
+      "server_id": 14360,
+      "hardware_id": 4360,
+      "vehicle_category_en": "Ninebot eMoped Mz",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        }
+      ]
+    },
+    {
+      "server_id": 14365,
+      "hardware_id": 4365,
+      "vehicle_category_en": "Ninebot eMoped Fz1",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        }
+      ]
+    },
+    {
+      "server_id": 14366,
+      "hardware_id": 4366,
+      "vehicle_category_en": "Ninebot eMoped Fz3",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        }
+      ]
+    },
+    {
+      "server_id": 14367,
+      "hardware_id": 4367,
+      "vehicle_category_en": "Ninebot eMoped Fz2",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        }
+      ]
+    },
+    {
+      "server_id": 10262,
+      "hardware_id": 262,
+      "vehicle_category_en": "Segway eKickscooter Ninebot MAX G3 Pro",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "vcu",
+          "r_id": 22,
+          "s_id": 22
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        }
+      ]
+    },
+    {
+      "server_id": 14371,
+      "hardware_id": 4371,
+      "vehicle_category_en": "Ninebot eScooter Mz1 30 CN",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        },
+        {
+          "name": "e-vis",
+          "r_id": 29,
+          "s_id": 29
+        }
+      ]
+    },
+    {
+      "server_id": 14370,
+      "hardware_id": 4370,
+      "vehicle_category_en": "Fz5",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        },
+        {
+          "name": "e-vis",
+          "r_id": 29,
+          "s_id": 29
+        },
+        {
+          "name": "ex-bt",
+          "r_id": 56,
+          "s_id": 56
+        },
+        {
+          "name": "spl",
+          "r_id": 58,
+          "s_id": 58
+        }
+      ]
+    },
+    {
+      "server_id": 14372,
+      "hardware_id": 4372,
+      "vehicle_category_en": "Mz3",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        },
+        {
+          "name": "e-vis",
+          "r_id": 29,
+          "s_id": 29
+        },
+        {
+          "name": "ex-bt",
+          "r_id": 56,
+          "s_id": 56
+        },
+        {
+          "name": "spl",
+          "r_id": 58,
+          "s_id": 58
+        }
+      ]
+    },
+    {
+      "server_id": 14373,
+      "hardware_id": 4373,
+      "vehicle_category_en": "Ninebot eScooter Mz5",
+      "ble_protocol": 2,
+      "encrypt": 2,
+      "comm_module": "ble",
+      "direct_connect": true,
+      "modules": [
+        {
+          "name": "dis",
+          "r_id": 1,
+          "s_id": 1
+        },
+        {
+          "name": "mcu",
+          "r_id": 2,
+          "s_id": 2
+        },
+        {
+          "name": "abs-f",
+          "r_id": 27,
+          "s_id": 27
+        },
+        {
+          "name": "ble",
+          "r_id": 4,
+          "s_id": 4
+        },
+        {
+          "name": "bms3",
+          "r_id": 5,
+          "s_id": 5
+        },
+        {
+          "name": "bms2",
+          "r_id": 6,
+          "s_id": 6
+        },
+        {
+          "name": "bms1",
+          "r_id": 7,
+          "s_id": 7
+        },
+        {
+          "name": "ecu",
+          "r_id": 9,
+          "s_id": 9
+        },
+        {
+          "name": "bfg",
+          "r_id": 16,
+          "s_id": 16
+        },
+        {
+          "name": "hep",
+          "r_id": 17,
+          "s_id": 17
+        },
+        {
+          "name": "chg",
+          "r_id": 18,
+          "s_id": 18
+        },
+        {
+          "name": "abs-r",
+          "r_id": 28,
+          "s_id": 28
+        },
+        {
+          "name": "tft",
+          "r_id": 35,
+          "s_id": 35
+        },
+        {
+          "name": "shu3",
+          "r_id": 10,
+          "s_id": 10
+        },
+        {
+          "name": "shu2",
+          "r_id": 11,
+          "s_id": 11
+        },
+        {
+          "name": "shu1",
+          "r_id": 12,
+          "s_id": 12
+        },
+        {
+          "name": "bms-ble1",
+          "r_id": 13,
+          "s_id": 13
+        },
+        {
+          "name": "bms-ble2",
+          "r_id": 14,
+          "s_id": 14
+        },
+        {
+          "name": "bms-ble3",
+          "r_id": 15,
+          "s_id": 15
+        },
+        {
+          "name": "light",
+          "r_id": 21,
+          "s_id": 21
+        },
+        {
+          "name": "swt-1",
+          "r_id": 19,
+          "s_id": 19
+        },
+        {
+          "name": "swt-2",
+          "r_id": 20,
+          "s_id": 20
+        },
+        {
+          "name": "dvr-f",
+          "r_id": 49,
+          "s_id": 49
+        },
+        {
+          "name": "dvr-m",
+          "r_id": 50,
+          "s_id": 50
+        },
+        {
+          "name": "dvr-r",
+          "r_id": 51,
+          "s_id": 51
+        },
+        {
+          "name": "fl-apl",
+          "r_id": 34,
+          "s_id": 34
+        },
+        {
+          "name": "gl-apl",
+          "r_id": 52,
+          "s_id": 52
+        },
+        {
+          "name": "htg",
+          "r_id": 53,
+          "s_id": 53
+        },
+        {
+          "name": "e-vis",
+          "r_id": 29,
+          "s_id": 29
+        },
+        {
+          "name": "ex-bt",
+          "r_id": 56,
+          "s_id": 56
+        },
+        {
+          "name": "spl",
+          "r_id": 58,
+          "s_id": 58
+        },
+        {
+          "name": "vbox",
+          "r_id": 64,
+          "s_id": 64
+        }
+      ]
+    }
+  ],
+  "decrypted_official_command_configs": [
+    {
+      "server_id": 14101,
+      "command_count": 663,
+      "sha256_decoded": "80a4ad8fac4f6f6e63a5365b88ddf39abd70057db4fc3fe755bf3f548fdf1651",
+      "default_commands": {
+        "cmd_writeNR": 3,
+        "cmd_writeACK": 5,
+        "cmd_readACK": 4,
+        "cmd_read": 1,
+        "timeout": 1000,
+        "retry": 5,
+        "cmd_write": 2
+      },
+      "read_candidates": [
+        {
+          "s_data": 2,
+          "s_index": 37,
+          "ops": "read",
+          "module": "dis",
+          "name": "rLeftMileage",
+          "r_index": 37
+        },
+        {
+          "s_data": 2,
+          "s_index": 181,
+          "ops": "read",
+          "module": "dis",
+          "name": "rBattery",
+          "r_index": 181
+        },
+        {
+          "s_data": 4,
+          "s_index": 183,
+          "ops": "read",
+          "module": "dis",
+          "name": "rMileage",
+          "r_index": 183
+        },
+        {
+          "s_data": 2,
+          "s_index": 38,
+          "ops": "read",
+          "module": "dis",
+          "name": "rSpeed",
+          "r_index": 38
+        },
+        {
+          "s_data": 2,
+          "s_index": 26,
+          "ops": "read",
+          "module": "bms1",
+          "name": "rVoltage",
+          "r_index": 26
+        },
+        {
+          "s_data": 2,
+          "s_index": 189,
+          "ops": "read",
+          "module": "dis",
+          "name": "rPower",
+          "r_index": 189
+        },
+        {
+          "s_data": 2,
+          "s_index": 94,
+          "ops": "read",
+          "module": "dis",
+          "name": "rNos",
+          "r_index": 94
+        }
+      ],
+      "aa55_commands": [
+        {
+          "s_data": 2,
+          "s_index": 377,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rSmartSpeakerVersion",
+          "r_index": 377
+        },
+        {
+          "s_data": 2,
+          "s_index": 335,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rBoolVcu_14F",
+          "r_index": 335
+        },
+        {
+          "s_data": 2,
+          "s_index": 376,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rSmartSpeakerStatus",
+          "r_index": 376
+        },
+        {
+          "s_data": 2,
+          "s_index": 321,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rInfoBool3",
+          "r_index": 321
+        },
+        {
+          "s_data": 2,
+          "s_index": 321,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rInfoBool3_2000",
+          "r_index": 321
+        }
+      ]
+    },
+    {
+      "server_id": 14357,
+      "command_count": 657,
+      "sha256_decoded": "2ea395aafc9b9159c05848ae720481134a594a41f9a8eaa7ae67cc89179d0da9",
+      "default_commands": {
+        "cmd_writeNR": 3,
+        "cmd_writeACK": 5,
+        "cmd_readACK": 4,
+        "cmd_read": 1,
+        "timeout": 1000,
+        "retry": 5,
+        "cmd_write": 2
+      },
+      "read_candidates": [
+        {
+          "s_data": 2,
+          "s_index": 37,
+          "ops": "read",
+          "module": "dis",
+          "name": "rLeftMileage",
+          "r_index": 37
+        },
+        {
+          "s_data": 2,
+          "s_index": 181,
+          "ops": "read",
+          "module": "dis",
+          "name": "rBattery",
+          "r_index": 181
+        },
+        {
+          "s_data": 4,
+          "s_index": 183,
+          "ops": "read",
+          "module": "dis",
+          "name": "rMileage",
+          "r_index": 183
+        },
+        {
+          "s_data": 2,
+          "s_index": 38,
+          "ops": "read",
+          "module": "dis",
+          "name": "rSpeed",
+          "r_index": 38
+        },
+        {
+          "s_data": 2,
+          "s_index": 26,
+          "ops": "read",
+          "module": "bms1",
+          "name": "rVoltage",
+          "r_index": 26
+        },
+        {
+          "s_data": 2,
+          "s_index": 189,
+          "ops": "read",
+          "module": "dis",
+          "name": "rPower",
+          "r_index": 189
+        },
+        {
+          "s_data": 2,
+          "s_index": 94,
+          "ops": "read",
+          "module": "dis",
+          "name": "rNos",
+          "r_index": 94
+        }
+      ],
+      "aa55_commands": [
+        {
+          "s_data": 2,
+          "s_index": 377,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rSmartSpeakerVersion",
+          "r_index": 377
+        },
+        {
+          "s_data": 2,
+          "s_index": 335,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rBoolVcu_14F",
+          "r_index": 335
+        },
+        {
+          "s_data": 2,
+          "s_index": 376,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rSmartSpeakerStatus",
+          "r_index": 376
+        },
+        {
+          "s_data": 2,
+          "s_index": 321,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rInfoBool3",
+          "r_index": 321
+        },
+        {
+          "s_data": 2,
+          "s_index": 321,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rInfoBool3_2000",
+          "r_index": 321
+        }
+      ]
+    },
+    {
+      "server_id": 14360,
+      "command_count": 660,
+      "sha256_decoded": "3a720c9e42397814f6af327b122c528d23c03b2f69b74bd68ae10c56cb97d80c",
+      "default_commands": {
+        "cmd_writeNR": 3,
+        "cmd_writeACK": 5,
+        "cmd_readACK": 4,
+        "cmd_read": 1,
+        "timeout": 1000,
+        "retry": 5,
+        "cmd_write": 2
+      },
+      "read_candidates": [
+        {
+          "s_data": 2,
+          "s_index": 37,
+          "ops": "read",
+          "module": "dis",
+          "name": "rLeftMileage",
+          "r_index": 37
+        },
+        {
+          "s_data": 2,
+          "s_index": 181,
+          "ops": "read",
+          "module": "dis",
+          "name": "rBattery",
+          "r_index": 181
+        },
+        {
+          "s_data": 4,
+          "s_index": 183,
+          "ops": "read",
+          "module": "dis",
+          "name": "rMileage",
+          "r_index": 183
+        },
+        {
+          "s_data": 2,
+          "s_index": 38,
+          "ops": "read",
+          "module": "dis",
+          "name": "rSpeed",
+          "r_index": 38
+        },
+        {
+          "s_data": 2,
+          "s_index": 26,
+          "ops": "read",
+          "module": "bms1",
+          "name": "rVoltage",
+          "r_index": 26
+        },
+        {
+          "s_data": 2,
+          "s_index": 189,
+          "ops": "read",
+          "module": "dis",
+          "name": "rPower",
+          "r_index": 189
+        },
+        {
+          "s_data": 2,
+          "s_index": 94,
+          "ops": "read",
+          "module": "dis",
+          "name": "rNos",
+          "r_index": 94
+        }
+      ],
+      "aa55_commands": [
+        {
+          "s_data": 2,
+          "s_index": 377,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rSmartSpeakerVersion",
+          "r_index": 377
+        },
+        {
+          "s_data": 2,
+          "s_index": 335,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rBoolVcu_14F",
+          "r_index": 335
+        },
+        {
+          "s_data": 2,
+          "s_index": 376,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rSmartSpeakerStatus",
+          "r_index": 376
+        },
+        {
+          "s_data": 2,
+          "s_index": 321,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rInfoBool3",
+          "r_index": 321
+        },
+        {
+          "s_data": 2,
+          "s_index": 321,
+          "ops": "read",
+          "module": "dis",
+          "proto": "AA55",
+          "name": "rInfoBool3_2000",
+          "r_index": 321
+        }
+      ]
+    }
+  ],
+  "kick_scooter_third_party_configs": [
+    {
+      "server_id": 10257,
+      "source_kind": "third-party static configuration, not runtime official file",
+      "source": "segway-ninebot-ble-app/assets/device_configs/10257.json",
+      "sha256": "5a682bf5458f114ea4816f2673f7cec8558df9c59204650e564d1a5f7d3a88e3",
+      "command_count": 192,
+      "read_candidates": [
+        {
+          "s_data": 2,
+          "s_index": 85,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rBattery",
+          "r_index": 85
+        },
+        {
+          "s_data": 2,
+          "s_index": 87,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rSpeed",
+          "r_index": 87
+        },
+        {
+          "s_data": 2,
+          "s_index": 94,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rPreciseMileage",
+          "r_index": 94
+        },
+        {
+          "s_data": 2,
+          "s_index": 95,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rLeftMileage",
+          "r_index": 95
+        },
+        {
+          "s_data": 4,
+          "s_index": 98,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rMileage",
+          "r_index": 98
+        },
+        {
+          "s_data": 2,
+          "s_index": 104,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rSingleMileage"
+        },
+        {
+          "s_data": 4,
+          "s_index": 140,
+          "ops": "read",
+          "module": "bms1",
+          "name": "rVoltage"
+        }
+      ]
+    },
+    {
+      "server_id": 10258,
+      "source_kind": "third-party static configuration, not runtime official file",
+      "source": "segway-ninebot-ble-app/assets/device_configs/10258.json",
+      "sha256": "5a682bf5458f114ea4816f2673f7cec8558df9c59204650e564d1a5f7d3a88e3",
+      "command_count": 192,
+      "read_candidates": [
+        {
+          "s_data": 2,
+          "s_index": 85,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rBattery",
+          "r_index": 85
+        },
+        {
+          "s_data": 2,
+          "s_index": 87,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rSpeed",
+          "r_index": 87
+        },
+        {
+          "s_data": 2,
+          "s_index": 94,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rPreciseMileage",
+          "r_index": 94
+        },
+        {
+          "s_data": 2,
+          "s_index": 95,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rLeftMileage",
+          "r_index": 95
+        },
+        {
+          "s_data": 4,
+          "s_index": 98,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rMileage",
+          "r_index": 98
+        },
+        {
+          "s_data": 2,
+          "s_index": 104,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rSingleMileage"
+        },
+        {
+          "s_data": 4,
+          "s_index": 140,
+          "ops": "read",
+          "module": "bms1",
+          "name": "rVoltage"
+        }
+      ]
+    },
+    {
+      "server_id": 10259,
+      "source_kind": "third-party static configuration, not runtime official file",
+      "source": "segway-ninebot-ble-app/assets/device_configs/10259.json",
+      "sha256": "5a682bf5458f114ea4816f2673f7cec8558df9c59204650e564d1a5f7d3a88e3",
+      "command_count": 192,
+      "read_candidates": [
+        {
+          "s_data": 2,
+          "s_index": 85,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rBattery",
+          "r_index": 85
+        },
+        {
+          "s_data": 2,
+          "s_index": 87,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rSpeed",
+          "r_index": 87
+        },
+        {
+          "s_data": 2,
+          "s_index": 94,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rPreciseMileage",
+          "r_index": 94
+        },
+        {
+          "s_data": 2,
+          "s_index": 95,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rLeftMileage",
+          "r_index": 95
+        },
+        {
+          "s_data": 4,
+          "s_index": 98,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rMileage",
+          "r_index": 98
+        },
+        {
+          "s_data": 2,
+          "s_index": 104,
+          "ops": "read",
+          "module": "vcu",
+          "name": "rSingleMileage"
+        },
+        {
+          "s_data": 4,
+          "s_index": 140,
+          "ops": "read",
+          "module": "bms1",
+          "name": "rVoltage"
+        }
+      ]
+    }
+  ],
+  "official_java_synthetic_scan_vectors": [
+    {
+      "name": "primary-v3",
+      "raw": [
+        7,
+        255,
+        78,
+        66,
+        67,
+        3,
+        0,
+        185
+      ],
+      "version": 3,
+      "bleType": 67,
+      "sn": null
+    },
+    {
+      "name": "secondary-v3",
+      "raw": [
+        7,
+        255,
+        78,
+        67,
+        1,
+        2,
+        3,
+        249
+      ],
+      "version": 3,
+      "bleType": 258,
+      "sn": null
+    },
+    {
+      "name": "tlv-v3",
+      "raw": [
+        8,
+        255,
+        31,
+        15,
+        3,
+        2,
+        1,
+        2,
+        247
+      ],
+      "version": 3,
+      "bleType": 258,
+      "sn": null
+    },
+    {
+      "name": "tlv-v3-sn",
+      "raw": [
+        13,
+        255,
+        31,
+        15,
+        3,
+        2,
+        1,
+        2,
+        36,
+        84,
+        69,
+        83,
+        84,
+        147
+      ],
+      "version": 3,
+      "bleType": 258,
+      "sn": "TEST"
+    },
+    {
+      "name": "primary-invalid-checksum",
+      "raw": [
+        7,
+        255,
+        78,
+        66,
+        67,
+        3,
+        0,
+        0
+      ],
+      "version": 0,
+      "bleType": -1,
+      "sn": null
+    }
+  ],
+  "native_files": [
+    {
+      "file": "libnbcrypto.so",
+      "bytes": 915472,
+      "sha256": "21e594e8d8dedeb5cc04942a763cab7b88f4686980bcc543be9cf3cf344b9ca2"
+    },
+    {
+      "file": "libnbenc_ffi.so",
+      "bytes": 946560,
+      "sha256": "5f8d9985088ae335ea705119823567d51b75cd3e2f530570d5ae9b32f2774e59"
+    },
+    {
+      "file": "librust_lib.so",
+      "bytes": 6804560,
+      "sha256": "2ce24100a8c525b575abbf2d53e0f7eee3562d29fec9ad3fe54431bcd9604188"
+    }
+  ],
+  "decompiled_class_evidence": [
+    {
+      "path": "decompiled/sources/cn/ninebot/library/bluetooth/dynamic/DynamicDevice.java",
+      "sha256": "1f72ef8f1a8d102dff3f313166928b0ab8d7f83d529e50af1e1d9d7b3e25eb5f"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/protocol/BleEncryption2Protocol.java",
+      "sha256": "afa3817c5feefb66d379a992da4019f3dfbd020894680cf1a0485d68ca5c5b4e"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/protocol/BleEncryption3Protocol2.java",
+      "sha256": "8d61045b973db19ddcc1d538ad745aac179427261f506bdb8be95e3e60b1ce1b"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/protocol/WifiEncryptionProtocol2.java",
+      "sha256": "4840b043d459bf335b7e952f799aabf77cd68cb6d8c6cc2c173d1aea7d9c10fd"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/protocol/BleProtocolAA55.java",
+      "sha256": "d558ca20181389a6fe075879e785402f0329df57710fb02e9285ddf6b00da961"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/scan/ScanRecord.java",
+      "sha256": "b7f81dff23e29fb87f9be19a403b855585fdb7c54169453e6bcfe188dbf71e6d"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/blesdk/BleSdkEncryption3Processor.java",
+      "sha256": "1598dcf14e50c2857b584c89064083f1c3f0a52ea2db80d64c7a89f4e13c68e1"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/blesdk/BleKeyStatusManager.java",
+      "sha256": "41e9665e273d10d84bf6a04f4544d3b852cf03f8f0eff65a041cc7c4c75f2b27"
+    },
+    {
+      "path": "decompiled/sources/cn/ninebot/library/nbbluetooth/api/V3AuthApiService.java",
+      "sha256": "c50ee3c3da6b0bb429e7c7c5b43bc3f819069ad59ca5201bf69fac257e2ba75e"
+    },
+    {
+      "path": "V3SessionKeyHelper.java",
+      "sha256": "980f5dca3368215133f611ec59cb04c387e601e834093af549e89c4737fe2e4a"
+    },
+    {
+      "path": "V3SessionKeyResponse.java",
+      "sha256": "56734bbe7d9ea2b2966925c0dc0d211566f45deaac4be7a4ced3718daf8c88e6"
+    }
+  ],
+  "publication_note": "九号研究公开整理版：仅包含配置/字段摘要、哈希及离线向量；未附官方 APK、库、反编译原件、原始抓包、账号或车辆凭据。"
+}

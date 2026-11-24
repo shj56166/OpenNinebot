@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "model": 14360,
+  "assertions": 196624,
+  "originalMethods": [
+    "VerifyConfig getters",
+    "PageConfig getters",
+    "CommandParser.parse/getStrategy",
+    "BoolMaskParserStrategy.parse",
+    "ParseStrategy.toBoolean.parse",
+    "FormatUtilsKt.getShortAt",
+    "Operator.Companion.bool"
+  ],
+  "exhaustive16BitInputs": 65536,
+  "booleanTransformsPerInput": 3,
+  "boundaryResults": [
+    {
+      "inputHex": "",
+      "mainPower": false,
+      "activation": false
+    },
+    {
+      "inputHex": "04",
+      "mainPower": true,
+      "activation": false
+    },
+    {
+      "inputHex": "0008",
+      "mainPower": false,
+      "activation": true
+    },
+    {
+      "inputHex": "0408",
+      "mainPower": true,
+      "activation": true
+    },
+    {
+      "inputHex": "0408ff",
+      "mainPower": true,
+      "activation": true
+    },
+    {
+      "inputHex": "ffff",
+      "mainPower": true,
+      "activation": true
+    }
+  ],
+  "mtuCondition": "absent/null; no fabricated default condition",
+  "serverPaths": [
+    "/app-api/device/bind/is-binding",
+    "/app-api/device/mac/update-mac-info"
+  ],
+  "networkRequestsExecuted": false,
+  "vehicleTestPerformed": false
+}

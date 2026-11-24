@@ -1,0 +1,98 @@
+{
+  "apk_sha256": "bd0a0a063fd1966836f97ce3ba2e948a52f6a5a86538dfef78118f7c83ebf94f",
+  "dex2jar_sha256": "cd7dcb614c42da5af5ac64f86253231b893ceb70628a5ce7c8c3080cb186662b",
+  "class_sha256": {
+    "g71.class": "4550f8c2c6dc234bb3380169af5effb902dc72805006b6e93fe953ea39971eb0",
+    "sd.class": "2ebab7de9ed867e6df9c1383333d6a03d38c7f4498539893674de4009ebce7ba"
+  },
+  "method": "Original dex2jar g71 and sd; inert o31/j31/fe stubs only; no network IO",
+  "jvm_flag": "-noverify needed because dex2jar classfiles have no required stack-map frames; no bytecode rewrite",
+  "assertions": [
+    {
+      "group": "fragmentation",
+      "frame_bytes": 4,
+      "packet_count": 1,
+      "first_header_hex": "90a0000001020304112233440000000100010000",
+      "last_packet_bytes": 24
+    },
+    {
+      "group": "fragmentation",
+      "frame_bytes": 1399,
+      "packet_count": 1,
+      "first_header_hex": "90a0000001020304112233440000000100010000",
+      "last_packet_bytes": 1419
+    },
+    {
+      "group": "fragmentation",
+      "frame_bytes": 1400,
+      "packet_count": 1,
+      "first_header_hex": "90a0000001020304112233440000000100010000",
+      "last_packet_bytes": 1420
+    },
+    {
+      "group": "fragmentation",
+      "frame_bytes": 1401,
+      "packet_count": 2,
+      "first_header_hex": "9020000001020304112233440000000100010000",
+      "last_packet_bytes": 21
+    },
+    {
+      "group": "fragmentation",
+      "frame_bytes": 2800,
+      "packet_count": 2,
+      "first_header_hex": "9020000001020304112233440000000100010000",
+      "last_packet_bytes": 1420
+    },
+    {
+      "group": "fragmentation",
+      "frame_bytes": 2801,
+      "packet_count": 3,
+      "first_header_hex": "9020000001020304112233440000000100010000",
+      "last_packet_bytes": 21
+    },
+    {
+      "group": "sequence_wrap",
+      "sequences": [
+        65535,
+        0
+      ]
+    },
+    {
+      "group": "marker_validation",
+      "rejected": 4,
+      "four_byte_marker_only_accepted": true
+    },
+    {
+      "group": "heartbeat",
+      "request_hex": "85cc0003000000016d70760004030201",
+      "16_byte_reply_accepted": false,
+      "20_byte_response_accepted": true,
+      "24_byte_reply_accepted": false
+    },
+    {
+      "group": "rtcp_sr_bye",
+      "hex": "80c8000611223344e8fe6f801f7ced91abcdef01010203040506070881cb000a11223344156a6c696272747020736179732062796520627965210000000000000000000000000000",
+      "block_sizes": [
+        28,
+        44
+      ],
+      "bye_reason_bytes": 21,
+      "bye_trailing_zero_bytes": 14,
+      "sdes_present": false
+    },
+    {
+      "group": "send_failure_cancel_selftest",
+      "cancel_sequence_consumed": true,
+      "send_failure_propagated": true,
+      "no_socket_increments_counters": true
+    },
+    {
+      "group": "summary",
+      "assertions": 151,
+      "g71_origin": "<external-evidence>",
+      "sd_origin": "<external-evidence>",
+      "network_packets_sent": 0
+    }
+  ],
+  "exit_code": 0
+}

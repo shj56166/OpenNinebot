@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "researchDate": "2026-11-15",
+  "scope": "Local APK/static/original-method/synthetic verification only; no phone, vehicle, cloud login or actual credential.",
+  "realVehicleValidated": false,
+  "apk": {
+    "path": "outputs/ninebot-ble-test-0.1.0-20261115.apk",
+    "bytes": 1335566,
+    "sha256": "e1179bcdb2890d4a92d7a9bde30a672e6dbca3c9c7b8738edbda65088a461daa",
+    "nativeLibraries": [],
+    "internetPermission": false,
+    "package": "com.motexa.ninebotbletest",
+    "version": "0.1.0",
+    "minSdk": 26,
+    "targetSdk": 35
+  },
+  "androidJUnit": {
+    "tests": 37,
+    "suites": [
+      {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "suite": "com.motexa.ninebotbletest.BleRtpPacketizerTest"
+      },
+      {
+        "tests": 5,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "suite": "com.motexa.ninebotbletest.CastConfigurationTest"
+      },
+      {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "suite": "com.motexa.ninebotbletest.NinebotAdvertisementTest"
+      },
+      {
+        "tests": 27,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "suite": "com.motexa.ninebotbletest.NinebotProbeSessionTest"
+      }
+    ]
+  },
+  "androidLint": {
+    "Warning": 8
+  },
+  "pythonUnitTests": {
+    "tests": 22,
+    "log": "python-tests.log"
+  },
+  "independentHciBoundaryCases": 3,
+  "officialOriginalJava": {
+    "scenarios": 120,
+    "assertions": 277
+  },
+  "gen2": {
+    "junit_tests": 27,
+    "independent_python_wire_vectors": 53,
+    "original_arm64_encryption_cases": 58
+  },
+  "gen3OriginalArm64": {
+    "secret-boundary-validation.json": {
+      "cases": 275,
+      "scope": "SecretInfo dispatcher and validation only. Formatting/error/storage are hooks; no cryptographic handshake or vehicle interoperability is established."
+    },
+    "hex-key-validation.json": {
+      "cases": 12,
+      "scope": "Original 2bdd60 -> 2a6420 -> 384da0 -> 2bcf54/27e288 decoder. Allocation and drop hooked; no cipher, radio, or cloud execution. Synthetic inputs only."
+    },
+    "fast-auth-crypto-validation.json": {
+      "cases": 47,
+      "scope": "Original 37cd04 AES+CCM; complete 383df8 challenge builder (clock source and RNG state hooked, buffered RNG index=0 only; initialization/reseed untested); original 37ce98 TLV parser (map insertion captured). Widths (2,2) prove generic parser behavior, not a vehicle schema. Memory/runtime hooks. Synthetic inputs only. No BLE/cloud/vehicle execution."
+    }
+  },
+  "gen3IndependentCrossReview": {
+    "gen3-cross-validation.json": {
+      "cases": 33,
+      "scope": "Unchanged ARM64 branch segments. Rendering, storage return values, logging and drops are hooks. No cloud, GATT, cipher, actual keyring durability or whole authentication state machine executed."
+    },
+    "fast-auth-map-cross-validation.json": {
+      "cases": 7,
+      "scope": "Supplemental original 37ce98 parser and 355fb8 HashMap insertion. Hash seed, memory and runtime hooks only; not the owner's 47-case suite repeated as new coverage. No radio, cloud, credentials or cipher use."
+    }
+  },
+  "modelCatalog": {
+    "models": 131,
+    "decodedCommandTables": 3,
+    "sha256": "68b7eaa84c9ef1b25b99f5b69aea0af171f9b7aa6791b8b01c68bcdfc298a600"
+  },
+  "mpeg2Clip": {
+    "sha256": "0abf50faf934a3ff82610a1aafafc068a0c15d367a14bb7f3510918764e92b16",
+    "decodedFrames": 10,
+    "distinctFrameHashes": 10,
+    "width": 240,
+    "height": 320,
+    "fps": 5,
+    "rawBytes": 145841
+  },
+  "documentationLinksChecked": 28,
+  "countingNote": "Reruns and cross-reviews do not add coverage; Session tests also appear within Android JUnit."
+}

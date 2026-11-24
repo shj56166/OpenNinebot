@@ -1,0 +1,335 @@
+{
+  "status": "passed",
+  "audit": "Independent rerun and frozen-evidence integrity check",
+  "integrity_checks": 49,
+  "checks": [
+    {
+      "label": "frozen APK sha256",
+      "passed": true,
+      "actual": "02ecd91b74e00df76cfe00eda4c4a9a5bc332231562a171e48d64f45bd418705",
+      "expected": "02ecd91b74e00df76cfe00eda4c4a9a5bc332231562a171e48d64f45bd418705"
+    },
+    {
+      "label": "classes12.dex sha256",
+      "passed": true,
+      "actual": "beb5cb710b62e81604abda96c39a58713cb72375551f6fed6154672bfcbd2440",
+      "expected": "beb5cb710b62e81604abda96c39a58713cb72375551f6fed6154672bfcbd2440"
+    },
+    {
+      "label": "classes14.dex sha256",
+      "passed": true,
+      "actual": "5a89522b76a5d8c6bea0dba7dc09a85eaab8d34149fc5cc030f790890f026d25",
+      "expected": "5a89522b76a5d8c6bea0dba7dc09a85eaab8d34149fc5cc030f790890f026d25"
+    },
+    {
+      "label": "classes20.dex sha256",
+      "passed": true,
+      "actual": "3737b8214c096af0113a0bbf6c159baf0cd188d6bf628338365bb816feabea56",
+      "expected": "3737b8214c096af0113a0bbf6c159baf0cd188d6bf628338365bb816feabea56"
+    },
+    {
+      "label": "classes21.dex sha256",
+      "passed": true,
+      "actual": "b5be5151b8ffe2984a2c43323e1e793458195fc274ac05281c50ccc4a72d62c2",
+      "expected": "b5be5151b8ffe2984a2c43323e1e793458195fc274ac05281c50ccc4a72d62c2"
+    },
+    {
+      "label": "classes22.dex sha256",
+      "passed": true,
+      "actual": "e5b397d07b8dffa862e6ea101d06ea591bffd7311d8ebc44e07c94db8e571c01",
+      "expected": "e5b397d07b8dffa862e6ea101d06ea591bffd7311d8ebc44e07c94db8e571c01"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.AbstractCaptureController.java sha256",
+      "passed": true,
+      "actual": "ce323615292b60e1f62d470c89b3386c158cee67e054602e19ebbbd35328ddd8",
+      "expected": "ce323615292b60e1f62d470c89b3386c158cee67e054602e19ebbbd35328ddd8"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.CaptureClient.java sha256",
+      "passed": true,
+      "actual": "d09828a9a375606175db03878fa9853987b1c6b56c4d5f644bff911e0f051e16",
+      "expected": "d09828a9a375606175db03878fa9853987b1c6b56c4d5f644bff911e0f051e16"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.CaptureService.java sha256",
+      "passed": true,
+      "actual": "c53f1d291c7f583b751c2d78f048d0e71ae2a44017fb094fe4d75466cc62cf6f",
+      "expected": "c53f1d291c7f583b751c2d78f048d0e71ae2a44017fb094fe4d75466cc62cf6f"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.encoder.FFmpegBitmapEncoder.java sha256",
+      "passed": true,
+      "actual": "389fabf163e6b29983726516bbd9baf393c735794fe2ff1d47727ccef262e386",
+      "expected": "389fabf163e6b29983726516bbd9baf393c735794fe2ff1d47727ccef262e386"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.encoder.FFmpegImageReaderEncoder.java sha256",
+      "passed": true,
+      "actual": "0986c1cc72a6aa3b0a1b23cb8b4bd625b920b6b68eafc9e19d81081c819c3b2a",
+      "expected": "0986c1cc72a6aa3b0a1b23cb8b4bd625b920b6b68eafc9e19d81081c819c3b2a"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.encoder.FFmpegViewEncoder.java sha256",
+      "passed": true,
+      "actual": "0b5c347e4e7c91bd40855bf61bd1d29692431c7429a97fa27a58863b6819ae89",
+      "expected": "0b5c347e4e7c91bd40855bf61bd1d29692431c7429a97fa27a58863b6819ae89"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.encoder.ImageReaderEncoder.java sha256",
+      "passed": true,
+      "actual": "b34c0f7f9671b2ccd426ef9f88ec8d2cf99a061b1e7707c1c4bf1ebb5c3a0d01",
+      "expected": "b34c0f7f9671b2ccd426ef9f88ec8d2cf99a061b1e7707c1c4bf1ebb5c3a0d01"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.encoder.LoopBitmapEncoder.java sha256",
+      "passed": true,
+      "actual": "629c7e2504ecd550ef6a9c5944c0e378cac095dd77b0ab3ef930940ed7fe42c1",
+      "expected": "629c7e2504ecd550ef6a9c5944c0e378cac095dd77b0ab3ef930940ed7fe42c1"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.encoder.ViewEncoder.java sha256",
+      "passed": true,
+      "actual": "972d1208d84bea2e5a1efa3b20cd1b4272f956b3dc38867fc03e3722d58f3e33",
+      "expected": "972d1208d84bea2e5a1efa3b20cd1b4272f956b3dc38867fc03e3722d58f3e33"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.mpeg2.Mpeg2CaptureController.java sha256",
+      "passed": true,
+      "actual": "12dc3f72789cb47b0305004d426b534edeafcc6b281b11ebffcddae869b33e94",
+      "expected": "12dc3f72789cb47b0305004d426b534edeafcc6b281b11ebffcddae869b33e94"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.mpeg2.Mpeg2Encoder.java sha256",
+      "passed": true,
+      "actual": "02905c702d912c27f764caa74146844af06b91642b676c1b21dbb7dacb396b42",
+      "expected": "02905c702d912c27f764caa74146844af06b91642b676c1b21dbb7dacb396b42"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.mpeg2.NbFFmpegFrameRecorder.java sha256",
+      "passed": true,
+      "actual": "2415704fe1277f3c9db1523bd00ffbe11d9fd12d1521865776be95a9ca8492c2",
+      "expected": "2415704fe1277f3c9db1523bd00ffbe11d9fd12d1521865776be95a9ca8492c2"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.VideoConfig.java sha256",
+      "passed": true,
+      "actual": "e5800c8e07e765f1a2b92a6eb1866974535fba5cb0c205cb6f61594d2aafaf6e",
+      "expected": "e5800c8e07e765f1a2b92a6eb1866974535fba5cb0c205cb6f61594d2aafaf6e"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.capture.VideoFrameHelper.java sha256",
+      "passed": true,
+      "actual": "2597b94e908404642def26df5449bba2f7128ee285bff9a2fd96d3f72d66318f",
+      "expected": "2597b94e908404642def26df5449bba2f7128ee285bff9a2fd96d3f72d66318f"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.library.nbbluetooth.blesdk.BleSdkClient.java sha256",
+      "passed": true,
+      "actual": "1278dec00e660baef10bdad57ad90bc16793b57789ce603edd56f978d7ba179d",
+      "expected": "1278dec00e660baef10bdad57ad90bc16793b57789ce603edd56f978d7ba179d"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.library.nbbluetooth.NbBluetoothDevice.java sha256",
+      "passed": true,
+      "actual": "7712993c9c6a81ade2e951b4739f0e15c81ee084065f311f7ea78541b5e7ac12",
+      "expected": "7712993c9c6a81ade2e951b4739f0e15c81ee084065f311f7ea78541b5e7ac12"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.library.screencast.BluetoothRtpSender.java sha256",
+      "passed": true,
+      "actual": "b839a1eaf95236e924941ce6b85dc4c47ee7162f0509e42859f4ec06e77211f0",
+      "expected": "b839a1eaf95236e924941ce6b85dc4c47ee7162f0509e42859f4ec06e77211f0"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.library.screencast.Frame.java sha256",
+      "passed": true,
+      "actual": "bb621fe3b9f179dfb20a551e10354f60031edf53319bf9450fb294360f72acd1",
+      "expected": "bb621fe3b9f179dfb20a551e10354f60031edf53319bf9450fb294360f72acd1"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.library.screencast.FrameSender.java sha256",
+      "passed": true,
+      "actual": "ef9bb87c8315a802ca77607671ac74a8288d3217e541a51700037b3cdce0efdd",
+      "expected": "ef9bb87c8315a802ca77607671ac74a8288d3217e541a51700037b3cdce0efdd"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.library.screencast.NormalSendQueue.java sha256",
+      "passed": true,
+      "actual": "91ecbeeab5f1bb687eb4e40ecd1347e3fed3601fc01e5ce17c9361aef40385c1",
+      "expected": "91ecbeeab5f1bb687eb4e40ecd1347e3fed3601fc01e5ce17c9361aef40385c1"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.mapcapture.DeviceScreenCastManager.java sha256",
+      "passed": true,
+      "actual": "1c68afec7e5afbf126b8704354824b9ee3981b66c698952f5a4a6e450e6c43ff",
+      "expected": "1c68afec7e5afbf126b8704354824b9ee3981b66c698952f5a4a6e450e6c43ff"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.mapcapture.DeviceScreenCastRequest.java sha256",
+      "passed": true,
+      "actual": "85008ee634a36546160f9684f69706272064d4618cf71fdce18ac622a3acf4ad",
+      "expected": "85008ee634a36546160f9684f69706272064d4618cf71fdce18ac622a3acf4ad"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.mapcapture.NBBleSender.java sha256",
+      "passed": true,
+      "actual": "67d35be51987dbaeaa1cad1451ef342042d12be47b0b327d592a927965fb099e",
+      "expected": "67d35be51987dbaeaa1cad1451ef342042d12be47b0b327d592a927965fb099e"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.mapcapture.NBBluetoothRtpSender.java sha256",
+      "passed": true,
+      "actual": "db5e0155ef884bd14d636a7331311a213a66314f6fc54be1eabaae3b30e57b23",
+      "expected": "db5e0155ef884bd14d636a7331311a213a66314f6fc54be1eabaae3b30e57b23"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.mapcapture.ScreenCastDataSender.java sha256",
+      "passed": true,
+      "actual": "73347c564e7da3a46c2e6eff44a60c5cb4ab56d6fec41becbde6ef4d98590cc4",
+      "expected": "73347c564e7da3a46c2e6eff44a60c5cb4ab56d6fec41becbde6ef4d98590cc4"
+    },
+    {
+      "label": "raw\\sources\\cn.ninebot.screencast.ScreenCastRequest.java sha256",
+      "passed": true,
+      "actual": "81fe6d9c964731fcb156fcb730e0393e751c894858b67f5904d2574fff4d491c",
+      "expected": "81fe6d9c964731fcb156fcb730e0393e751c894858b67f5904d2574fff4d491c"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.BaseRtpSession.java sha256",
+      "passed": true,
+      "actual": "e4262df15a4f697620021c35cf2c1680cbc025b6254764cac4504b9c7aa29c68",
+      "expected": "e4262df15a4f697620021c35cf2c1680cbc025b6254764cac4504b9c7aa29c68"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.ble.BleRTCPSenderThread.java sha256",
+      "passed": true,
+      "actual": "780e8b260385d98280124702a145c5d4e93d3e5404dc091288355dabd92dd308",
+      "expected": "780e8b260385d98280124702a145c5d4e93d3e5404dc091288355dabd92dd308"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.ble.BleRTCPSession.java sha256",
+      "passed": true,
+      "actual": "f8fb32dcd7838e75fe68c66300bf0be5766717502f02a8e51db148ef9b6ab9d3",
+      "expected": "f8fb32dcd7838e75fe68c66300bf0be5766717502f02a8e51db148ef9b6ab9d3"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.ble.BleRtpPkt.java sha256",
+      "passed": true,
+      "actual": "79704bab20b6ba21d12ea9a585ac4a1294af1abddacfbba03e16742d07961948",
+      "expected": "79704bab20b6ba21d12ea9a585ac4a1294af1abddacfbba03e16742d07961948"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.ble.BleRTPSession.java sha256",
+      "passed": true,
+      "actual": "e51a5a8c429d8e94f8801687c4ab979a21bb525f67d1d6332bb5c8654decbe9d",
+      "expected": "e51a5a8c429d8e94f8801687c4ab979a21bb525f67d1d6332bb5c8654decbe9d"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.RtpPkt.java sha256",
+      "passed": true,
+      "actual": "15a9a925092dc5a36252606515d0e891bab37c72a14e37e807904ccd83e8be71",
+      "expected": "15a9a925092dc5a36252606515d0e891bab37c72a14e37e807904ccd83e8be71"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.RtpPktExtension.java sha256",
+      "passed": true,
+      "actual": "a6a0e4cb5626634d4ee2ef54902f5f37885ae7f081d3270f3e440d1309b708c2",
+      "expected": "a6a0e4cb5626634d4ee2ef54902f5f37885ae7f081d3270f3e440d1309b708c2"
+    },
+    {
+      "label": "raw\\sources\\jlibrtp.RtpPktHeaderExtension.java sha256",
+      "passed": true,
+      "actual": "f67852878366501dffe2e575eaf6aeed38d2c78db7ef935aebc33840ae9ffbdd",
+      "expected": "f67852878366501dffe2e575eaf6aeed38d2c78db7ef935aebc33840ae9ffbdd"
+    },
+    {
+      "label": "raw\\asm-9.5.jar sha256",
+      "passed": true,
+      "actual": "b62e84b5980729751b0458c534cf1366f727542bb8d158621335682a460f0353",
+      "expected": "b62e84b5980729751b0458c534cf1366f727542bb8d158621335682a460f0353"
+    },
+    {
+      "label": "raw\\original-classes12.jar sha256",
+      "passed": true,
+      "actual": "a3ada99c309cf974c778695e92b4e6e57c5e5054e99f84aa8bbab9e006c7bd91",
+      "expected": "a3ada99c309cf974c778695e92b4e6e57c5e5054e99f84aa8bbab9e006c7bd91"
+    },
+    {
+      "label": "raw\\original-classes20.jar sha256",
+      "passed": true,
+      "actual": "e32f3c3de2e7b59d40404c8ca67906034bb0fdcd91d393e22593ded65a6487b3",
+      "expected": "e32f3c3de2e7b59d40404c8ca67906034bb0fdcd91d393e22593ded65a6487b3"
+    },
+    {
+      "label": "original packet PT",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "original packet fixed header length",
+      "passed": true,
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "label": "original packet extension profile",
+      "passed": true,
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "original packet extension word count",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "label": "original packet key picture type",
+      "passed": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "label": "original packet raw media retained",
+      "passed": true,
+      "actual": "000001657f",
+      "expected": "000001657f"
+    }
+  ],
+  "packet_vector_decoded": {
+    "length": 25,
+    "version": 2,
+    "extension_flag": true,
+    "csrc_count": 0,
+    "marker": true,
+    "payload_type": 0,
+    "sequence": 4660,
+    "timestamp": 16909060,
+    "ssrc": 287454020,
+    "extension_profile": 0,
+    "extension_words": 1,
+    "extension_bytes": "00010000",
+    "picture_type": 1,
+    "media_bytes": "000001657f"
+  },
+  "rerun_original_method_results": {
+    "queue_and_split": {
+      "status": "passed",
+      "assertions": 570,
+      "queue_cases": 9,
+      "split_cases": 60,
+      "origin": "Original dex2jar NormalSendQueue/Frame and BluetoothRtpSender.send/ByteUtil.splitArray; unchanged retained method bodies; session captures arguments without network"
+    },
+    "session": {
+      "status": "passed",
+      "assertions": 15,
+      "cases": 10,
+      "ble_java_vector": "9080123401020304112233440000000100010000000001657f",
+      "origin": "Unmodified original dex2jar classes12 BleRTPSession/BaseRtpSession/RTP encoding methods; only IBleSender replaced by offline sink; original null-sender constructor avoids RTCP threads"
+    }
+  },
+  "new_application_test_cases_added": 0,
+  "scope": "JVM execution of unchanged retained dex2jar methods; no Android encoder, BLE or vehicle execution"
+}

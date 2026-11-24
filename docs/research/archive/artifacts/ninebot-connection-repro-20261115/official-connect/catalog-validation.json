@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "131 model entries and exactly three decoded command tables",
+    "14357: four evidenced casting commands route to tft 0x23",
+    "14101: four evidenced casting commands route to tft 0x23",
+    "14360: four evidenced casting commands route to tft 0x23",
+    "14357 four casting commands agree after normalizing default r_cmd=0 in cached/decrypted asset tables"
+  ],
+  "ble_protocol_distribution": {
+    "2": 110,
+    "1": 7,
+    "None": 14
+  },
+  "config_encrypt_distribution": {
+    "None": 60,
+    "0": 5,
+    "2": 66
+  },
+  "tft_board_present": 56,
+  "vehicle_validation": false
+}

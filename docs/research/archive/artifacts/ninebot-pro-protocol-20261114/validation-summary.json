@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "checks": {
+    "connection_config": 34,
+    "h264_rtp": 5103,
+    "jpeg": 151,
+    "kcp_kernel": 24,
+    "kcp_upstream_interop": 13
+  },
+  "total_recorded_checks": 5325,
+  "h264_packet_cases": 210,
+  "h264_linked_kcp_cases": 29,
+  "frozen_files_verified": 111,
+  "apk_entries_verified": 13,
+  "utf8_documents_checked": 12,
+  "local_links_checked": 45,
+  "issues": [],
+  "scope": "Offline local methods and synthetic KCP peer; no Android/vehicle execution"
+}

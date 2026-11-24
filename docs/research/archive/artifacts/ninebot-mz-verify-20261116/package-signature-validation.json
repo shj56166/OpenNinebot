@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "packageSha256": "07e7c35f23291d3f971e0c276c737895ead27a1afc2a2751fd0cb51bc24ef465",
+  "publicKeyAsset": "assets/config_rsa_public_key.pem",
+  "publicKeySha256": "f8c6474981f1c04498fc62a4d03b2638157410490dcd6ae36f6bc00b7b04c088",
+  "rsaBits": 1024,
+  "padding": "PKCS1v15",
+  "files": [
+    {
+      "file": "ble.nb",
+      "signedInput": "exact encrypted file bytes",
+      "digest": "sha256",
+      "signatureValid": true,
+      "singleByteMutationRejected": true
+    },
+    {
+      "file": "device_commands.nb",
+      "signedInput": "exact encrypted file bytes",
+      "digest": "sha256",
+      "signatureValid": true,
+      "singleByteMutationRejected": true
+    },
+    {
+      "file": "vehicle_capability_config.nb",
+      "signedInput": "exact encrypted file bytes",
+      "digest": "sha256",
+      "signatureValid": true,
+      "singleByteMutationRejected": true
+    },
+    {
+      "file": "device_ui_connect.nb",
+      "signedInput": "exact encrypted file bytes",
+      "digest": "sha256",
+      "signatureValid": true,
+      "singleByteMutationRejected": true
+    }
+  ],
+  "privateKeyUsed": false
+}

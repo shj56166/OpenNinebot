@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": {
+    "java_queue_split_assertions": 570,
+    "java_ble_session_assertions": 15,
+    "arm64_forward_cases": 14,
+    "arm64_initializer_cases": 7,
+    "arm64_writer_jni_segment_cases": 24
+  },
+  "java_assertions_total": 585,
+  "frozen_files_verified": 120,
+  "apk_dex_entries_verified": 8,
+  "utf8_documents_checked": 10,
+  "local_links_checked": 33,
+  "issues": [],
+  "scope": "Offline original local methods and original ARM64 basic paths; no vehicle/Android execution"
+}

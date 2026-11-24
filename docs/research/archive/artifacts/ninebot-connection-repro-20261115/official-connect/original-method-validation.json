@@ -1,0 +1,1 @@
+{"passed":true,"scenarios":120,"assertions":277,"original_methods":["DynamicDevice.createBleProtocol","DynamicDevice.onReadVersions","BtFileReader.onResponse","BtFileReader.active","BtFile.getText","NbBluetoothAttributes","ScanRecord.parse"],"vehicle_validation":false}

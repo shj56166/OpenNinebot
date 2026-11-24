@@ -1,0 +1,1 @@
+{"status":"passed","assertions":15,"cases":10,"ble_java_vector":"9080123401020304112233440000000100010000000001657f","origin":"Unmodified original dex2jar classes12 BleRTPSession/BaseRtpSession/RTP encoding methods; only IBleSender replaced by offline sink; original null-sender constructor avoids RTCP threads"}
