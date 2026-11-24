@@ -15,7 +15,8 @@ URL = f'https://ffmpeg.org/releases/ffmpeg-{VERSION}.tar.xz'
 
 
 def msys(path):
-    value = str(Path(path).resolve()).replace('\\', '/')
+    # LLVM selects ranlib behavior from the symlink name in argv[0].
+    value = str(Path(path).absolute()).replace('\\', '/')
     return '/' + value[0].lower() + value[2:] if len(value) > 1 and value[1] == ':' else value
 
 

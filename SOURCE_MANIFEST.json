@@ -348,7 +348,7 @@
     },
     "scripts/prepare-codecs.py": {
       "source": "scripts/prepare-codecs.py",
-      "sha256": "2377ce396326ffe9615243d018b86abaf8a48e000cbfd689cea749cb55e3b991"
+      "sha256": "9ba68f4e940a37f87cde1bf2ea90f21ddba80bd481305948dee61518e3f37260"
     },
     "scripts/prepare-native.py": {
       "source": "scripts/prepare-native.py",
